@@ -1,0 +1,8 @@
+<view>
+  <block wx:for="{{array}}">
+    <view>
+      <text>{{index + 1}} '{{item.message}}'</text>
+    </view>
+  </block>
+</view>
+
