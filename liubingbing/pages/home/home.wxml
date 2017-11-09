@@ -1,5 +1,5 @@
 <view>
-  <block wx:if="{{originArr.length <= 26}}">
+  <block wx:if="{{originArr.length < 26}}">
     <button size="{{defaultSize}}" type="default" bindtap="up">增长</button>
   </block>
   <block wx:if="{{originArr.length >=8 }}">
