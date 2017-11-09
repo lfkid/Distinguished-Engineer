@@ -2,32 +2,29 @@
 Page({
   data: {
     defaultSize: 'mini',
-    flag: false,
-    arr1: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
-    arr2: ['h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    originArr: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+    stackArr: ['h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   },
   up: function (event) {
-    let newArr2 = this.data.arr2;
-    let newArr1 = this.data.arr1;
-    let c = newArr2.shift();
-    newArr1.push(c);
+    let staArrCopy = this.data.stackArr;
+    let oriArrCopy = this.data.originArr;
+    let c = staArrCopy.shift();
+    oriArrCopy.push(c);
     this.setData({
-      arr1: newArr1,
-      arr2: newArr2
+      originArr: oriArrCopy,
+      stackArr: staArrCopy
     });
-    //console.log(c)测试得到数是否符合要求
-    console.log(this.data.arr1, this.data.arr2)
+    console.log(this.data.originArr, this.data.stackArr)
   },
   down: function (event) {
-    let newArr2 = this.data.arr2;
-    let newArr1 = this.data.arr1;
-    let d = newArr1.pop(); //得到目数据
-    newArr2.unshift(d);
+    let staArrCopy = this.data.stackArr;
+    let oriArrCopy = this.data.originArr;
+    let d = oriArrCopy.pop(); //得到目数据
+    staArrCopy.unshift(d);
     this.setData({
-      arr1: newArr1,
-      arr2: newArr2
+      originArr: oriArrCopy,
+      stackArr: staArrCopy
     });
-    console.log(this.data.arr1, this.data.arr2)
-    //console.log(d)测试得到数是否符合要求
+    console.log(this.data.originArr, this.data.stackArr)
   },
 })

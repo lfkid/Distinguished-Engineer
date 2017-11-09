@@ -1,13 +1,13 @@
 <view>
-  <block wx:if="{{arr1.length <= 26}}">
-    <button size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="up">增长</button>
+  <block wx:if="{{originArr.length <= 26}}">
+    <button size="{{defaultSize}}" type="default" bindtap="up">增长</button>
   </block>
-  <block wx:if="{{arr1.length >=8 }}">
-    <button size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="down">减小</button>
+  <block wx:if="{{originArr.length >=8 }}">
+    <button size="{{defaultSize}}" type="default" bindtap="down">减小</button>
   </block>
 </view>
 <view>
-  <block wx:for="{{arr1}}" wx:for-index="indexArr1" wx:for-item="itemArr1Name">
+  <block wx:for="{{originArr}}" wx:for-index="indexArr1" wx:for-item="itemArr1Name">
     <view>
       {{indexArr1+1}} '{{itemArr1Name}}'
     </view>
