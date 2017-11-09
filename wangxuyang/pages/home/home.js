@@ -1,11 +1,23 @@
 Page({
+
   data: {
-    array: ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    arrayOne: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+    arrayTwo: ['h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+      'v', 'w', 'x', 'y', 'z']
+
   },
   add: function (e) {
-    console.log("单击");
+    this.data.arrayOne.push('h')
+    this.setData({
+      arrayOne: this.data.arrayOne
+    })
   },
+
   minus: function (e) {
-    console.log("单击");
+    this.data.arrayOne.pop('h')
+      this.setData({
+        arrayOne: this.data.arrayOne
+      })
+    }
   }
-})
+)
