@@ -1,7 +1,9 @@
-<button type="primary" size="default" plain="true"
-  disabled="{{arrayOne.length>=26}}" bindtap="add">加 </button>
-<button type="warn" size="default" plain="true"
-  disabled="{{arrayOne.length<8}}" bindtap="minus"> 减 </button>
+<block wx:if="{{arrayOne.length<26}}">
+  <button type="primary" size="default" plain="true" bindtap="add">加 </button>
+</block>
+<block wx:if="{{arrayOne.length>=8}}">
+  <button type="warn" size="default" plain="true" bindtap="minus"> 减 </button>
+</block>
 <view wx:for="{{arrayOne}}">
   {{index+1}} '{{item}}'
 </view>
