@@ -27,6 +27,3 @@ up: function (event) {
     }
     //console.log(d)测试得到数是否符合要求
   },
-
-    defaultSize: 'mini',
-    flag: false,
