@@ -2,9 +2,9 @@
 <!--pages/home/home.wxml-->
 
 <!--pages/home/home.wxml-->
-<button bindtap="setDisabled" type="primary" size="mini"  plain="{{plain}}"
+<button bindtap="addArray" size="mini" }"
       > add </button>
-<button type="primary" size="mini"  plain="{{plain}}"
+<button type="subArray" size="mini" }"
       > sub </button>
 <block wx:for="{{array}}">
       <view>{{index+1}} '{{item.mes}}'</view>

@@ -9,7 +9,13 @@ Page({
             {mes : 'e'},
             {mes : 'f'},
             {mes : 'g'}]
-   }
+   },
+  addArray:function(e){
   
+  },
+  subArray:function(e){
+  
+  }
 })
+
 
