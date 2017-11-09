@@ -1,4 +1,4 @@
-size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="down"
+
 up: function (event) {
     //let flag1 = flag;
     let newArr2 = this.data.arr2;

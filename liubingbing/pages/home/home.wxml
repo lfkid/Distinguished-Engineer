@@ -1,9 +1,9 @@
 <view>
   <block>
-    <button>增长</button>
+    <button size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="down">增长</button>
   </block>
   <block>
-    <button>减小</button>
+    <button size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="down">减小</button>
   </block>
 </view>
 <view>
