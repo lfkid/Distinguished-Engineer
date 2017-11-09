@@ -7,14 +7,16 @@ Page({
 
   },
   add: function (e) {
-    this.data.arrayOne.push('h')
+    let a = this.data.arrayTwo.shift()
+    this.data.arrayOne.push(a)
     this.setData({
       arrayOne: this.data.arrayOne
     })
   },
 
   minus: function (e) {
-    this.data.arrayOne.pop('h')
+    let b = this.data.arrayOne.pop()
+    this.data.arrayTwo.unshift(b)
       this.setData({
         arrayOne: this.data.arrayOne
       })
