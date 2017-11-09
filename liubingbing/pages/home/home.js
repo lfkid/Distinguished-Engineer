@@ -1,27 +1,7 @@
 // pages/home/home.js
 Page({
   data: {
-    array: [{
-        message: 'a'
-      },
-      {
-        message: 'b'
-      },
-      {
-        message: 'c'
-      },
-      {
-        message: 'd'
-      },
-      {
-        message: 'e'
-      },
-      {
-        message: 'f'
-      },
-      {
-        message: 'g'
-      }
-    ]
-  }
+    arr1: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+    arr2: ['h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  },
 })

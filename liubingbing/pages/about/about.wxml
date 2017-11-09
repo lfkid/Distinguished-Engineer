@@ -1,1 +1,2 @@
 <!--pages/about/about.wxml-->
+<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>

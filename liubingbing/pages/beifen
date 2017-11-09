@@ -1,0 +1,32 @@
+size="{{defaultSize}}" disabled="{{flag}}" type="default" bindtap="down"
+up: function (event) {
+    //let flag1 = flag;
+    let newArr2 = this.data.arr2;
+    let newArr1 = this.data.arr1;
+    let c = newArr2.shift();
+    newArr1.push(c);
+    if (newArr1.length < 27) {
+      this.setData({
+        //flag: flag1,
+        arr1: newArr1,
+        arr2: newArr2
+      });
+    }
+    //console.log(c)测试得到数是否符合要求
+  },
+  down: function (event) {
+    let newArr2 = this.data.arr2;
+    let newArr1 = this.data.arr1;
+    let d = newArr1.pop(); //得到目数据
+    newArr2.unshift(d);
+    if (newArr1.length > 6) {
+      this.setData({
+        arr1: newArr1,
+        arr2: newArr2
+      });
+    }
+    //console.log(d)测试得到数是否符合要求
+  },
+
+    defaultSize: 'mini',
+    flag: false,
