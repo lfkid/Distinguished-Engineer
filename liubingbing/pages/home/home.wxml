@@ -1,9 +1,9 @@
 <view>
   <block wx:if="{{originArr.length < 26}}">
-    <button size="{{defaultSize}}" type="default" bindtap="up">增长</button>
+    <button size="{{defaultSize}}" type="default" bindtap="up">增加</button>
   </block>
   <block wx:if="{{originArr.length >=8 }}">
-    <button size="{{defaultSize}}" type="default" bindtap="down">减小</button>
+    <button size="{{defaultSize}}" type="default" bindtap="down">减少</button>
   </block>
 </view>
 <view>
