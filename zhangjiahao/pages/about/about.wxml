@@ -1,1 +1,4 @@
 <!--pages/about/about.wxml-->
+
+<button type="primary" size="mini"  plain="{{plain}}"
+      > add </button>

@@ -2,6 +2,13 @@
 <!--pages/home/home.wxml-->
 
 <!--pages/home/home.wxml-->
-<block wx:for="{{array}}">
-      <view>{{index+1}} '{{item.message}}'</view>
+<block wx:if="{{num<26}}">
+<button bindtap="addArray" size="mini" > add </button>
 </block>
+<block wx:if="{{num>7}}">
+<button bindtap="subArray" size="mini" > sub </button>
+</block>
+<view wx:for="{{array}}">
+      {{index+1}} '{{array[index]}}'
+</view>
+
