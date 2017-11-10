@@ -5,29 +5,33 @@
   justify-content:space-between;
 }
 .img{
-   width:80px;height:80px;
+  margin:5px;
+  width:70px;height:90px;
 }
 .message{
+  margin:5px;
   height:80px;
 }
 .message-head{
-  font-size:20px;
+  font-size:15px;
 }
 .message-text{
-  font-size:16px;
+  font-size:12px;
 }
 .input{
-   width:50px;height:80px;
+  margin:5px;
+  width:45px;height:80px;
 }
 .input-text{
+  padding:5px;
   display: flex;
-  font-size:12px;
+  font-size:10px;
   align-items:center;
 }
 .buttonC{
 
-  width:50px;
-  height:25px;
+  width:45px;
+  height:20px;
   font-size:8px;
 }
 
