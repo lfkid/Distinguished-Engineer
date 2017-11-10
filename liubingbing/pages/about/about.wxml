@@ -1,2 +1,9 @@
 <!--pages/about/about.wxml-->
-<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+<view class="page-style">
+  <view class="first-flex">
+    <!-- 显示作业要求的第一个child中的图片 -->
+    <view class="images-style">
+        <image style="width: 80px; height: 80px; background-color: #fff;" src="{{src}}"></image>
+    </view>
+  </view>
+</view>

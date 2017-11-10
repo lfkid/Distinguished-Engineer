@@ -1,6 +1,6 @@
 // pages/about/about.js
 Page({
-  tapName: function(event) {
-    console.log(event)
+  data: {
+    src: '../../asserts/images/home/cat.jpg'
   }
 })
