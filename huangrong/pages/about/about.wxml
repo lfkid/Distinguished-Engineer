@@ -15,4 +15,73 @@
       <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
     </view>
   </view>
+
+  <view class="item">
+      <view class="item-left">
+        <view class="picture">
+          <image src="{{imgLocation2}}"></image>
+        </view>
+      </view>
+      <view class="item-middle">
+        <view class="title">{{title2}}</view>
+        <view class="introduction">{{introduction2}}</view>
+        <view class="performer">{{performer2}}</view>
+      </view>
+      <view class="item-right">
+        <view class="score">{{score2}}分</view>
+        <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
+      </view>
+    </view>
+
+    <view class="item">
+        <view class="item-left">
+          <view class="picture">
+            <image src="{{imgLocation3}}"></image>
+          </view>
+        </view>
+        <view class="item-middle">
+          <view class="title">{{title3}}</view>
+          <view class="introduction">{{introduction3}}</view>
+          <view class="performer">{{performer3}}</view>
+        </view>
+        <view class="item-right">
+          <view class="score">{{score3}}分</view>
+          <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
+        </view>
+      </view>
+
+      <view class="item">
+          <view class="item-left">
+            <view class="picture">
+              <image src="{{imgLocation4}}"></image>
+            </view>
+          </view>
+          <view class="item-middle">
+            <view class="title">{{title4}}</view>
+            <view class="introduction">{{introduction4}}</view>
+            <view class="performer">{{performer4}}</view>
+          </view>
+          <view class="item-right">
+            <view class="score">{{score4}}分</view>
+            <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
+          </view>
+        </view>
+
+        <view class="item">
+            <view class="item-left">
+              <view class="picture">
+                <image src="{{imgLocation5}}"></image>
+              </view>
+            </view>
+            <view class="item-middle">
+              <view class="title">{{title5}}</view>
+              <view class="introduction">{{introduction5}}</view>
+              <view class="performer">{{performer5}}</view>
+            </view>
+            <view class="item-right">
+              <view class="score">{{score5}}分</view>
+              <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
+            </view>
+          </view>
+
 </view>

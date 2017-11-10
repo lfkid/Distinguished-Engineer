@@ -3,10 +3,13 @@
   flex-direction: row;
   justify-content:space-between;
   text-align: left;
-  height: 100px;
-  border-bottom: 1px solid rgb(219, 219, 219);
+  height: 220rpx;
+  border-bottom: 2rpx solid rgb(219, 219, 219);
   align-items: center;
-  margin-top: 10px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
 }
 
 .item-left {
@@ -15,9 +18,9 @@
 
 .item-middle {
   flex-grow: 4;
-  margin-left: 10px;
+  margin-left: 20rpx;
   align-self:flex-start;
-  margin-top: 10px;
+  margin-top: 20rpx;
 }
 
 .item-right {
@@ -26,38 +29,38 @@
 
 .picture image{
   display: block;
-  width: 60px;
-  height: 90px;
+  width: 120rpx;
+  height: 180rpx;
 }
 
 
 .title {
-  font-size: 18px;
+  font-size: 30rpx;
   font-weight: bold;
 }
 
 .introduction {
-  margin-top: 5;
-  font-size: 14px;
+  margin-top: 5rpx;
+  font-size: 28rpx;
   color: #666666;
 }
 
 .performer {
-  font-size: 14px;
+  font-size: 28rpx;
   color: #666666;
 }
 
 .score {
-  margin-left: 15px;
-  font-size: 14px;
+  margin-left: 30rpx;
+  font-size: 28rpx;
   color: rgb(238, 95, 95);
   font-weight: bold;
 }
 
 .buy {
-  font-size: 14px;
-  margin-top: 30px;
-  margin-left: 10px;
-  border: lpx solid #29cc6d;
-  columns: #29cc6d;
+  font-size: 28rpx;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  height: 70rpx;
+  width: 140rpx;
 }
