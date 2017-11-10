@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="item">
+    <view class="item-left">
+      <view class="picture">
+        <image src="{{imgLocation1}}"></image>
+      </view>
+    </view>
+    <view class="item-middle">
+      <view class="title">{{title1}}</view>
+      <view class="introduction">{{introduction1}}</view>
+      <view class="performer">{{performer1}}</view>
+    </view>
+    <view class="item-right">
+      <view class="score">{{score1}}分</view>
+      <button class="buy">{{buyDisplay}}</button>
+    </view>
+  </view>
+</view>

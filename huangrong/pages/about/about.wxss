@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  text-align: left;
+}
+
+.item-left {
+  flex: 1;
+  background: tomato;
+}
+
+.item-middle {
+  flex: 2;
+  background: teal;
+}
+
+.item-right {
+  flex: 1;
+  background: tan;
+}
+
+.picture image{
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+
+.title {
+  font-size: 18px;
+}
+
+.introduction {
+  font-size: 14px;
+}
+
+.performer {
+  font-size: 14px;
+}
+
+.score {
+  font-size: 14px;
+  color: rgb(238, 95, 95);
+  font-weight: bold;
+}
+
+.buy {
+  font-size: 14px;
+  margin-top: 3-px;
+  border: lpx solid #29cc6d;
+  columns: #29cc6d;
+}
