@@ -13,5 +13,16 @@
       <text class="movie-msg">机也学子/屋良有作/一龙斋贞友</text>
     </view>
 
+    <!-- 第三个评分和购票 这个child内还有两个child-->
+    <view class="third-flex">
+      <!-- 这个text用于显示电影的分数 属性class是文本的样式表-->
+      <text id="text-style">7.8分</text>
+
+      <!-- 这个button是购票button 属性class是button的样式表 -->
+      <button class="button-style">
+        <text class="button-text">购票</text>
+      </button>
+    </view>
+
   </view>
 </view>
