@@ -1,5 +1,13 @@
 /* pages/about/about.wxss */
-.page-style {
+.templetePage-style {
+  padding: 5;
+  margin: 5;
+  display: flex;
+  justify-content: center;
+}
+
+/* 页面标题的样式表 */
+.title-style {
   padding: 5;
   margin: 5;
   display: flex;
