@@ -1,1 +1,23 @@
 /* pages/about/about.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.img{
+   width:80px;height:80px;
+}
+.message{
+   height:80px;
+
+}
+.input{
+   width:50px;height:80px;
+}
+.input-text{
+   front-size:8px;
+}
+.buttonC{
+  width:40px;
+  height:20px;
+}
+
