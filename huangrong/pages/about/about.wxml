@@ -12,7 +12,7 @@
     </view>
     <view class="item-right">
       <view class="score">{{score1}}分</view>
-      <button class="buy">{{buyDisplay}}</button>
+      <button class="buy" type="primary" plain="true" >{{buyDisplay}}</button>
     </view>
   </view>
 </view>
