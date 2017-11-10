@@ -4,10 +4,17 @@
   flex-direction: row;
   justify-content:space-between;
 }
+
+.img-mes{
+  display: flex;
+  justify-content:flex-start;
+}
+
 .img{
   margin:5px;
   width:70px;height:90px;
 }
+
 .message{
   margin:5px;
   height:80px;
@@ -18,12 +25,14 @@
 .message-text{
   font-size:12px;
 }
+
 .input{
   margin:5px;
-  width:45px;height:80px;
+  width:45px;
+  height:80px;
 }
 .input-text{
-  padding:5px;
+  padding:10px;
   display: flex;
   font-size:10px;
   align-items:center;
