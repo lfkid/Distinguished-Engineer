@@ -1,3 +1,16 @@
-<view wx:for="{{['a', 'b', 'c', 'd', 'e', 'f', 'g']}}" wx:for-item="i">
-  {{index+1}} '{{i}}'
+<view>
+  <block wx:if="{{array1.length<26}}">
+      <button type="default"size="mini"bindtap="add">
+         Add
+      </button>
+  </block>
+  <block wx:if="{{array1.length>7}}">
+      <button type="default"size="mini"bindtap="subtract">
+         Subtract
+      </button>
+  </block>
 </view>
+<view wx:for="{{array1}}">
+    {{index+1}} '{{item}}'
+</view>
+
