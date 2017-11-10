@@ -1,11 +1,12 @@
 <!--pages/about/about.wxml-->
 <view class="content">
   <image src="/asserts/images/sy.jpg" class = "img"></image>
-    <view class="message">
-  <text>微信小程序 \r\n 微信小程序 \r\n 微信小程序 </text>
+  <view class="message">
+    <text class = "message-head">微信小程序 \r\n </text>
+    <text class = "message-text">微信小程序 </text>
   </view>
   <view class = "input">
-    <text class = "input-text">9.0分 \r\n </text>
+    <text class = "input-text">9.0分</text>
     <button class = "buttonC">购票</button>
   </view>
 </view>

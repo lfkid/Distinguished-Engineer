@@ -2,22 +2,32 @@
 .content{
   display: flex;
   flex-direction: row;
+  justify-content:space-between;
 }
 .img{
    width:80px;height:80px;
 }
 .message{
-   height:80px;
-
+  height:80px;
+}
+.message-head{
+  font-size:20px;
+}
+.message-text{
+  font-size:16px;
 }
 .input{
    width:50px;height:80px;
 }
 .input-text{
-   front-size:8px;
+  display: flex;
+  font-size:12px;
+  align-items:center;
 }
 .buttonC{
-  width:40px;
-  height:20px;
+
+  width:50px;
+  height:25px;
+  font-size:8px;
 }
 
