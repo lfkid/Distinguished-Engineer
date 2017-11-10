@@ -29,3 +29,14 @@
   font-size: 14px;
   justify-content: center;
 }
+
+.third-flex {
+  padding: 0;
+  margin: 0;
+  /*使用flex布局方式*/
+  display: flex;
+  /*设置justify-content：space-around这样是水平线剧中*/
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
