@@ -1,2 +1,32 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class="movie-list">
+  <template name="msgItem">
+    <view class="item">
+      <view class="item-left">
+        <image src="{{imgPath}}"></image>
+      </view>
+      <view class="item-middle">
+        <view class="title">
+          <text>{{title}}</text>
+        </view>
+        <view class="subtitle">
+          <text>{{subTitle}}</text>
+        </view>
+        <view class="actor">
+          <text>{{actor}}</text>
+        </view>
+      </view>
+      <view class="item-right">
+        <view>
+          <text class="score">{{score}}</text>
+        </view>
+        <view>
+           <text class="action" bindtap="buy" id="大话西游3">{{action}}</text> 
+        </view>
+      </view>
+    </view>
+  </template>
+
+  <block wx:for="{{movie}}">
+    <template is="msgItem" data="{{...item}}"></template>
+  </block>
+</view>

@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/about/about",
-    "pages/home/home"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,11 +18,15 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "/asserts/images/home.png",
+        "selectedIconPath": "/asserts/images/home_selected.png"
       },
       {
         "pagePath": "pages/about/about",
-        "text": "关于"
+        "text": "关于",
+        "iconPath": "/asserts/images/about.png",
+        "selectedIconPath": "/asserts/images/about_selected.png"
       }
     ]
   }

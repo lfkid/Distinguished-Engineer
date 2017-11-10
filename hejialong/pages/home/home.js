@@ -11,8 +11,8 @@ Page({
     const len = this.data.arr.length
     let newArr = this.data.arr
     newArr.push(this.data.strs[len - 7])
-    // console.log("newArr" + this.data.newArr)
-    // console.log("arr" + this.data.arr)
+    // console.log("newArr: " + this.data.newArr)
+    // console.log("arr: " + this.data.arr)
     this.setData({
       arr: newArr,
       canAdd: this.data.arr.length < 26,

@@ -1,1 +1,72 @@
 /* pages/about/about.wxss */
+.movie-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rpx;
+  margin: 10rpx;
+  background-color: rgb(245, 245, 245);
+  height: 240rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-left {
+  flex: 0;
+}
+
+image {
+  display: block;
+  width: 120rpx;
+  height: 180rpx;
+}
+
+.item-middle {
+  flex: 4;
+  margin-left: 20rpx;
+  height: 180rpx;
+}
+
+.item-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 180rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36rpx;
+  color: black;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.actor {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 50rpx;
+}
+
+.score {
+  color: red;
+  font-size: 28rpx;
+}
+
+.action {
+  border: 2rpx solid #29cc6d;
+  color: #29cc6d;
+  padding: 4rpx 8rpx;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+}
