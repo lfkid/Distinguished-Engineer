@@ -20,7 +20,7 @@
           <text class="score">{{score}}</text>
         </view>
         <view>
-           <text class="action" bindtap="buy" id="大话西游3">{{action}}</text> 
+          <navigator class="action" url="/pages/index/index?title={{title}}" hover-class="navigator-hover">{{action}}</navigator>
         </view>
       </view>
     </view>

@@ -27,12 +27,4 @@ Page({
       }
     ],
   },
-
-  buy: function (e) {
-    console.log(e.currentTarget.id);
-    wx.navigateTo({
-      url: '../../pages/index/index',
-      success: function (res) {}
-    })
-  }
 })
