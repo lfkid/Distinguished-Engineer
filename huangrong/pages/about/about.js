@@ -31,5 +31,14 @@ Page({
     introduction5:'月光宝盒重开启，爱你岂止一万年',
     performer5: '韩庚/唐嫣/莫文蔚/钟欣潼/吴京',
     score5: '7.6'
+  },
+  buy:function(e)
+  {
+    wx.navigateTo({
+      url: '../buy/buy',
+      success: function(res){
+        // success
+      }
+    })
   }
 })
