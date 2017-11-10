@@ -3,9 +3,10 @@
   flex-direction: row;
   justify-content:space-between;
   text-align: left;
-  height: 130px;
+  height: 100px;
   border-bottom: 1px solid rgb(219, 219, 219);
   align-items: center;
+  margin-top: 10px;
 }
 
 .item-left {
@@ -15,6 +16,7 @@
 .item-middle {
   flex-grow: 4;
   margin-left: 10px;
+  align-self:flex-start;
   margin-top: 10px;
 }
 
@@ -24,8 +26,8 @@
 
 .picture image{
   display: block;
-  width: 80px;
-  height: 120px;
+  width: 60px;
+  height: 90px;
 }
 
 
@@ -37,11 +39,11 @@
 .introduction {
   margin-top: 5;
   font-size: 14px;
+  color: #666666;
 }
 
 .performer {
   font-size: 14px;
-  margin-top: 20px;
   color: #666666;
 }
 
