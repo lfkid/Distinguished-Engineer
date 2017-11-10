@@ -1,18 +1,22 @@
 <!--pages/about/about.wxml-->
 <view class="the-whole-page">
-  <view class="title-style">微票</view>
+  <!-- <view class="title-style">微票</view> -->
+  <!-- 可以讲此部分设为模版，然后每次调用 -->
   <view class="templetePage-style">
     <view class="first-flex">
       <!-- 显示作业要求的第一个child中的图片 -->
       <view class="images-style">
-        <image style="width: 80px; height: 80px; background-color: #fff;" src="{{src}}"></image>
+        <image style="width: 80px; height: 80px; background-color: #fff;"
+          src="{{src}}"></image>
       </view>
 
       <!-- 中间的三行文字处理 这个child内部还有三个child 分别用来存储电影标题，电影简介，电影作者 -->
       <view class="second-flex">
-        <text class="movie-title">樱桃小丸子: 来自意大利的少年</text>
-        <text class="movie-msg">小丸子恋美少年，他竟然不是花轮..</text>
-        <text class="movie-msg">机也学子/屋良有作/一龙斋贞友</text>
+        <text class="movie-title">{{firstMovieTitle}}</text>
+        <text class="movie-msg">{{firstMovieMsg}}</text>
+        <text class="movie-msg">{{firstMovieAuth}}</text>
+
+
       </view>
 
       <!-- 第三个评分和购票 这个child内还有两个child-->
