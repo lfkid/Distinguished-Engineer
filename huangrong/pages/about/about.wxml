@@ -1,9 +1,7 @@
 <view class="container">
   <view class="item">
     <view class="item-left">
-      <view class="picture">
-        <image src="{{imgLocation1}}"></image>
-      </view>
+      <image class="picture" src="{{imgLocation1}}"></image>
     </view>
     <view class="item-middle">
       <view class="title">{{title1}}</view>
@@ -18,9 +16,7 @@
 
   <view class="item">
       <view class="item-left">
-        <view class="picture">
-          <image src="{{imgLocation2}}"></image>
-        </view>
+        <image class="picture" src="{{imgLocation2}}"></image>
       </view>
       <view class="item-middle">
         <view class="title">{{title2}}</view>
@@ -35,9 +31,7 @@
 
     <view class="item">
         <view class="item-left">
-          <view class="picture">
-            <image src="{{imgLocation3}}"></image>
-          </view>
+          <image class="picture" src="{{imgLocation3}}"></image>
         </view>
         <view class="item-middle">
           <view class="title">{{title3}}</view>
@@ -52,9 +46,7 @@
 
       <view class="item">
           <view class="item-left">
-            <view class="picture">
-              <image src="{{imgLocation4}}"></image>
-            </view>
+            <image class="picture" src="{{imgLocation4}}"></image>
           </view>
           <view class="item-middle">
             <view class="title">{{title4}}</view>
@@ -69,9 +61,7 @@
 
         <view class="item">
             <view class="item-left">
-              <view class="picture">
-                <image src="{{imgLocation5}}"></image>
-              </view>
+              <image class="picture" src="{{imgLocation5}}"></image>
             </view>
             <view class="item-middle">
               <view class="title">{{title5}}</view>
