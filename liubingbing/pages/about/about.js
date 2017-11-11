@@ -44,7 +44,16 @@ Page({
   //路由点按钮得到一事件，然跳转到其他的pag页中
   buyTicket: function (event) {
     wx.navigateTo({
-      url: '../welToBuy/welToBuy'
+      url: '../welToBuy/welToBuy',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   }
 })
