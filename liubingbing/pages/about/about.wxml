@@ -1,33 +1,60 @@
-<!--pages/about/about.wxml-->
-<view class="the-whole-page">
-  <!-- <view class="title-style">微票</view> -->
-  <!-- 可以讲此部分设为模版，然后每次调用 -->
-  <view class="templetePage-style">
-    <view class="first-flex">
-      <!-- 显示作业要求的第一个child中的图片 -->
-      <view class="images-style">
-        <image style="width: 80px; height: 80px; background-color: #fff;"
-          src="{{item1[0]}}"></image>
-      </view>
+<!--pages/about/about.wxml -->
+<!-- <view class="container">
 
-      <!-- 中间的三行文字处理 这个child内部还有三个child 分别用来存储电影标题，电影简介，电影作者 -->
-      <view class="second-flex">
-        <view class="title">{{item1[1]}}</view>
-        <view class="introduction">{{item1[2]}}</view>
-        <view class="performer">{{item1[3]}}</view>
-      </view>
+  <view class="item">
+    <view class="item-left">
+      <image class="picture" src="{{item1[0]}}"></image>
+    </view>
 
-      <!-- 第三个评分和购票 这个child内还有两个child-->
-      <view class="third-flex">
-        <!-- 这个text用于显示电影的分数 属性class是文本的样式表-->
-        <text class="text-style">{{item1[4]}}</text>
+    <view class="item-middle">
+      <view class="title">{{item1[1]}}</view>
+      <view class="introduction">{{item1[2]}}</view>
+      <view class="performer">{{item1[3]}}</view>
+    </view>
 
-        <!-- 这个button是购票button 属性class是button的样式表 -->
-        <button class="buy" type="primary" plain="true" id="buyId" bindtap="buyTicket">
-          {{buyticketContent}}
-        </button>
-      </view>
-
+    <view class="item-right">
+      <view class="score">{{item1[4]}}</view>
+      <button class="buy" type="primary" plain="true" id="buy1" bindtap="buyTicket">{{buyticketTitle}}</button>
     </view>
   </view>
+
+  <view class="item">
+    <view class="item-left">
+      <image class="picture" src="{{item2[0]}}"></image>
+    </view>
+
+    <view class="item-middle">
+      <view class="title">{{item2[1]}}</view>
+      <view class="introduction">{{item2[2]}}</view>
+      <view class="performer">{{item2[3]}}</view>
+    </view>
+
+    <view class="item-right">
+      <view class="score">{{item2[4]}}</view>
+      <button class="buy" type="primary" plain="true" id="buy2" bindtap="buyTicket">{{buyticketTitle}}</button>
+    </view>
+  </view>
+</view> -->
+
+<!-- 单独定义一个模版 -->
+<template name="firstTemplate">
+  <view class="item-whole">
+    <view class="item-left">
+      <image class="picture" src="{{url}}"></image>
+    </view>
+
+    <view class="item-middle">
+      <view class="title">{{title}}</view>
+      <view class="description">{{content}}</view>
+      <view class="authors">{{autor}}</view>
+    </view>
+
+    <view class="item-right">
+      <view class="score">{{score}}</view>
+      <button class="buy-tickets" type="primary" plain="true" bindtap="buyTicket">购票</button>
+    </view>
+  </view>
+</template>
+<view wx:for="{{itemArr}}">
+  <template is="firstTemplate" data="{{...itemArr[index]}}" />
 </view>
