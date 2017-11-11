@@ -1,2 +1,11 @@
 <!--pages/welToBuy/welToBuy.wxml-->
-<text>welcome to buy ticket</text>
+<view>
+  <view class="titleStyle">
+      <text>welcome to buy ticket</text>
+  </view>
+  <view>
+    <image src=""></image>
+  </view>
+
+</view>
+
