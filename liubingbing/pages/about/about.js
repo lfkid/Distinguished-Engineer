@@ -12,7 +12,16 @@ Page({
   },
   buyTicket: function (event) {
     wx.navigateTo({
-      url: '../welToBuy/welToBuy'
+      url: '../welToBuy/welToBuy',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   }
 })
