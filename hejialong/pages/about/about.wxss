@@ -11,10 +11,11 @@
   flex-direction: row;
   padding-left: 20rpx;
   margin: 10rpx;
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
   height: 240rpx;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgb(241, 241, 241);
 }
 
 .item-left {
