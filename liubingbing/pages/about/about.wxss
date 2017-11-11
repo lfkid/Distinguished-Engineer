@@ -13,21 +13,21 @@
   display: flex;
   justify-content: center;
 }
-
-
-/* 先采用id选择器进行细分处理 */
+/* 先采用id选择器进行细分处理*/
 .first-flex {
-  /*设置盒子模型的px值*/
   padding: 0;
   margin: 0;
-  /*使用flex布局方式*/
   display: flex;
-  /*设置justify-content：space-around这样是水平线剧中*/
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.images-style {
+  padding: 5;
+  margin: 5;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* 处理的是中间文字部分 */
-
+/* 处理的是中间文字flex */
 .second-flex {
   padding: 5;
   margin: 5;
@@ -38,12 +38,11 @@
   justify-content: center;
 }
 
+/* 处理第三部分的按钮评分问题 */
 .third-flex {
   padding: 0;
   margin: 0;
-  /*使用flex布局方式*/
   display: flex;
-  /*设置justify-content：space-around这样是水平线剧中*/
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

@@ -7,26 +7,24 @@
       <!-- 显示作业要求的第一个child中的图片 -->
       <view class="images-style">
         <image style="width: 80px; height: 80px; background-color: #fff;"
-          src="{{src}}"></image>
+          src="{{item1[0]}}"></image>
       </view>
 
       <!-- 中间的三行文字处理 这个child内部还有三个child 分别用来存储电影标题，电影简介，电影作者 -->
       <view class="second-flex">
-        <text class="movie-title">{{firstMovieTitle}}</text>
-        <text class="movie-msg">{{firstMovieMsg}}</text>
-        <text class="movie-msg">{{firstMovieAuth}}</text>
-
-
+        <view class="title">{{item1[1]}}</view>
+        <view class="introduction">{{item1[2]}}</view>
+        <view class="performer">{{item1[3]}}</view>
       </view>
 
       <!-- 第三个评分和购票 这个child内还有两个child-->
       <view class="third-flex">
         <!-- 这个text用于显示电影的分数 属性class是文本的样式表-->
-        <text class="text-style">7.8分</text>
+        <text class="text-style">{{item1[4]}}</text>
 
         <!-- 这个button是购票button 属性class是button的样式表 -->
-        <button class="button-style">
-          <text class="button-text">购票</text>
+        <button class="buy" type="primary" plain="true" id="buyId" bindtap="buyTicket">
+          {{buyticketContent}}
         </button>
       </view>
 
