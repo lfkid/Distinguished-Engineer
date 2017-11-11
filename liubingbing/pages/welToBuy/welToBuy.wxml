@@ -1,11 +1,6 @@
 <!--pages/welToBuy/welToBuy.wxml-->
 <view>
-  <view class="titleStyle">
-      <text>welcome to buy ticket</text>
-  </view>
   <view>
-    <image src=""></image>
+    <image  class="picture" src="{{src}}"></image>
   </view>
-
 </view>
-
