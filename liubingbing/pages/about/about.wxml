@@ -37,7 +37,7 @@
 </view> -->
 
 <!-- 单独定义一个模版 -->
-<template name="firstTemplate">
+<template name="templateName">
   <view class="item-whole">
     <view class="item-left">
       <image class="picture" src="{{url}}"></image>
@@ -56,5 +56,5 @@
   </view>
 </template>
 <view wx:for="{{itemArr}}">
-  <template is="firstTemplate" data="{{...itemArr[index]}}" />
+  <template is="templateName" data="{{...itemArr[index]}}" />
 </view>
