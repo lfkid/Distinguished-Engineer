@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/buy/buy"
   ],
   "window":{
     "backgroundTextStyle":"light",

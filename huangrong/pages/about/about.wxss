@@ -1,0 +1,66 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  text-align: left;
+  height: 220rpx;
+  border-bottom: 2rpx solid rgb(219, 219, 219);
+  align-items: center;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.item-left {
+  flex-grow: 1;
+}
+
+.item-middle {
+  flex-grow: 4;
+  margin-left: 20rpx;
+  align-self:flex-start;
+  margin-top: 20rpx;
+}
+
+.item-right {
+  flex-grow: 1;
+}
+
+.picture {
+  display: block;
+  width: 120rpx;
+  height: 180rpx;
+}
+
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.introduction {
+  margin-top: 5rpx;
+  font-size: 14px;
+  color: #666666;
+}
+
+.performer {
+  font-size: 14px;
+  color: #666666;
+}
+
+.score {
+  margin-left: 30rpx;
+  font-size: 14px;
+  color: rgb(238, 95, 95);
+  font-weight: bold;
+}
+
+.buy {
+  font-size: 14px;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  height: 70rpx;
+  width: 140rpx;
+}
