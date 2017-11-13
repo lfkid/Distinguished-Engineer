@@ -56,3 +56,52 @@
   width: 80rpx;
 }
 
+.bottomBar{
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  bottom:0rpx;
+  height:40px;
+  background-color:yellow;
+  width:100%;
+}
+.see{
+width:40px;
+height:100%;
+
+}
+
+.seeText{
+position:fixed;
+bottom:0px;
+}
+
+.mes{
+
+
+}
+
+.mesText{
+font-size:15px;
+position:fixed;
+border-radius: 20px;
+width:15px;
+height:15px;
+background-color:red;
+color:white;
+padding-left:3px;
+padding-bottom:3px;
+}
+
+.account{
+  position:fixed;
+  width:50px;
+  height:100%;
+  right:0px;
+  background-color:green;
+  padding:10px;
+}
+
+.accText{
+
+}

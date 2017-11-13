@@ -25,3 +25,15 @@
   </block>
 </view>
 
+<view class = "bottomBar">
+  <view class ="see">
+    <text class ="seeText">查看</text>
+  </view>
+  <view class ="mes">
+    <text class ="mesText">2</text>
+  </view>
+  <view class = "account">
+    <text class ="accText">结算</text>
+  </view>
+</view>
+
