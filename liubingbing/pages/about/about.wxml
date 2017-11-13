@@ -59,5 +59,13 @@
   <template is="templateName" data="{{...itemArr[index]}}" />
 </view>
 <view class="shoppingCar">
-  <text>购物车结算</text>
+  <view class="shoppingCar-blankBox">
+    <text>购物车</text>
+    <view class="superScript">
+      <text>1</text>
+    </view>
+  </view>
+  <view class="shoppingCar-buyBox">
+    <text>结算</text>
+  </view>
 </view>

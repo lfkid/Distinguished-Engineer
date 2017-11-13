@@ -71,5 +71,42 @@
 .shoppingCar {
   position:fixed;
   display:flex;
-  color: red;
+  height:100rpx;
+  width:100%;
+  bottom:0rpx;
+  border-top: 2rpx solid rgb(219, 219, 219);
+}
+
+.shoppingCar-blankBox {
+  background:whitesmoke;
+  flex-grow:3.5;
+  display:flex;
+  align-items:center;
+  padding-left: 20rpx;
+  color: slategray;
+}
+
+.shoppingCar-buyBox {
+  background:orangered;
+  flex-grow:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: white;
+  font-size: 40rpx;
+}
+
+.superScript {
+  color:#fff;
+  border-radius:50%;
+  background:crimson;
+  font-size:24rpx;
+  right: 14rpx;
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  bottom: 20rpx;
+  position: absolute;
+  right: 590rpx;
+  bottom: 60rpx;
 }
