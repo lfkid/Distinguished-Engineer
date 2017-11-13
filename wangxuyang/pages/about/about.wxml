@@ -1,17 +1,17 @@
 <view class="list">
-  <block wx:for="{{pic}}">
+  <block wx:for="{{movie}}">
     <view class="item">
       <view class="item-left">
-        <image wx:key="{{item.id}}" src='{{pic[index].src}}'></image>
+        <image wx:key="{{item.id}}" src='{{movie[index].src}}'></image>
       </view>
       <view class="item-middle">
-        <text class="text-title">{{pic[index].title}}</text>
-        <text class="text-desc">{{pic[index].desc}}
+        <text class="text-title">{{movie[index].title}}</text>
+        <text class="text-desc">{{movie[index].desc}}
       </text>
-        <text class="text-dubbing"> {{pic[index].dubbing}} </text>
+        <text class="text-dubbing"> {{movie[index].dubbing}} </text>
       </view>
       <view class="item-right">
-        <text class="text-score">{{pic[index].score}}</text>
+        <text class="text-score">{{movie[index].score}}</text>
         <button type="primary" size="mini" plain="true"> 购票 </button>
       </view>
     </view>
