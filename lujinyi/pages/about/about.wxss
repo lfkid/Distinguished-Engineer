@@ -1,122 +1,119 @@
 /* pages/about/about.wxss */
-.page{
-  background:#a5a3a3;
+
+.page {
+  background: #a5a3a3;
 }
 
-.item{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  background:#fff;
-  margin-bottom:5rpx;
+.item {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 5rpx;
 }
 
-.left{
-  display:flex;
+.left {
+  display: flex;
 }
 
-.right{
+.right {
   height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
-.text{
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  margin-left:20rpx;
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
 }
 
-
-.images{
+.images {
   width: 150rpx;
   height: 180rpx;
-  margin-left:10rpx;
-  margin-top:10rpx;
-  margin-bottom:10rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }
 
-.text1{
-  font-size:18pt;
-  margin-top:10rpx;
+.text1 {
+  font-size: 16pt;
+  margin-top: 10rpx;
 }
 
-.text2{
-  font-size:12pt;
-  margin-top:25rpx;
+.text2 {
+  font-size: 12pt;
+  margin-top: 25rpx;
 }
 
-.text3{
-  font-size:12pt;
-  margin-top:5rpx;
+.text3 {
+  font-size: 12pt;
+  margin-top: 5rpx;
 }
 
-.score{
-  font-size:15pt;
-  color:red;
-  align-self:center;
-  margin-top:10rpx;
-  margin-left:20rpx;
-  margin-right:20rpx;
-}
-
-.ticket{
-  font-size:10pt;
-  color:#ff0000;
-  border:4rpx solid #ff0000;
-  border-radius:8rpx;
-  text-align:center;
-  padding:8rpx;
-  margin-top:40rpx;
-  align-self:center;
-}
-
-.white{
-  height:100rpx;
-  background:#fff;
-}
-
-.account{
-  position:fixed;
-  display:flex;
-  height:100rpx;
+.score {
+  font-size: 12pt;
+  color: red;
+  margin-top: 30rpx;
+  margin-right: 20rpx;
   width:100%;
-  bottom:0rpx;
 }
 
-.accleft{
-  background:#fff;
-  flex-grow:2.5;
-  display:flex;
+.ticket {
+  font-size: 8pt;
+  color: #ff0000;
+  border: 4rpx solid #ff0000;
+  border-radius: 8rpx;
+  padding: 6rpx;
+  margin-top: 40rpx;
+  margin-right:20rpx;
+  align-self:center;
 }
 
-.accright{
-  background:#ff8a1d;
-  flex-grow:1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.white {
+  height: 100rpx;
+  background: #fff;
 }
 
-.accMessage{
-  margin-left:50rpx;
-  margin-top:25rpx;
+.account {
+  position: fixed;
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  bottom: 0rpx;
 }
 
-.accNum{
-  height:9pt;
-  color:#fff;
-  border:4rpx solid #ff8a1d;
-  border-radius:50rpx;
-  padding-left:8rpx;
-  padding-right:8rpx;
-  background:rgb(255, 138, 29);
-  font-size:7pt;
-  margin-top:10rpx;
+.accleft {
+  background: #fff;
+  flex-grow: 2.5;
+  display: flex;
 }
 
-.accButton{
-  color:#fff;
+.accright {
+  background: #ff8a1d;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accMessage {
+  margin-left: 50rpx;
+  margin-top: 25rpx;
+}
+
+.accNum {
+  height: 9pt;
+  color: #fff;
+  border: 4rpx solid #ff8a1d;
+  border-radius: 50rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  background: rgb(255, 138, 29);
+  font-size: 7pt;
+  margin-top: 10rpx;
+}
+
+.accButton {
+  color: #fff;
 }
