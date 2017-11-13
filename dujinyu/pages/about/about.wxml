@@ -1,16 +1,18 @@
-<view class="page">
-  <view class="item">
-    <view class="item-left">
-      <image src="{{src}}"></image>
+<view wx:for="{{itemArray}}">
+
+    <view class="item">
+      <view class="item-left">
+        <image src="{{item.url}}"></image>
+      </view>
+      <view class="item-middle">
+        <text class="text-title">{{item.title}}</text>
+        <text class="text-description">{{item.description}}</text>
+        <text class="text-performer">{{item.performers}}</text>
+      </view>
+      <view class="item-right">
+        <text class="text-score">{{item.score}}</text>
+        <button type="primary" size="mini" plain="true"> 购票 </button>
+      </view>
     </view>
-    <view class="item-middle">
-      <text class="text-title">猎场</text>
-      <text class="text-desc">职场新人，逆袭猎场</text>
-      <text class="text-dubbing"> 胡歌 / 万茜 / 孙红雷 </text>
-    </view>
-    <view class="item-right">
-      <text class="text-score">6.0分</text>
-      <button type="primary" size="mini" plain="true"> 购票 </button>
-    </view>
-  </view>
+
 </view>

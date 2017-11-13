@@ -1,63 +1,60 @@
-.page {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .item {
-  height: 120px;
+  height: 100px;
   display: flex;
+  margin-top: 10px;
   /* align-items: center; */
 }
 
-image {
-  width: 80px;
-  height: 120px;
-  background-color: #eee;
-}
-
-button {
-  margin-right: 10px;
-}
-
-.text-title {
-  font-size: 20px;
-  color: black;
-}
-
-.text-desc {
-  font-size: 16px;
-  color: rgb(41, 39, 39);
-}
-
-.text-dubbing {
-  font-size: 14px;
-  color: rgb(61, 60, 60);
-  /* margin-top: 30px; */
-}
-
-.text-score {
-  margin-left: 10px;
-  font-size: 20px;
-  color: rgb(241,12,12);
-}
-
 .item-left {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .item-middle {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   margin-left: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item-right {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 5px;
+  /*margin-right: 5px;*/
+  margin-left: 10px;
+}
+
+image {
+  width: 80px;
+  height: 100px;
+  background-color: #eee;
+}
+
+.text-title {
+  font-size: 16px;
+  color: black;
+}
+
+.text-description {
+  font-size: 14px;
+  color: rgb(41, 39, 39);
+}
+
+.text-performer {
+  font-size: 12px;
+  color: rgb(61, 60, 60);
+  /* margin-top: 30px; */
+}
+
+.text-score {
+  margin-left: 5px;
+  font-size: 20px;
+  color: rgb(241,12,12);
+}
+
+button {
+  margin-right: 9px;
+  font-size: 10px;
 }
