@@ -1,31 +1,17 @@
 <!--pages/about/about.wxml-->
 <view class="page">
-  <view class="item">
+  <view class="item" wx:for="{{mvMessage}}">
     <view class="left">
-      <image class="images" src="{{mvMessage[0].src}}"></image>
+      <image class="images" src="{{item.src}}"></image>
       <view class="text">
-        <text class="text1">{{mvMessage[0].text1}}</text>
-        <text class="text2">{{mvMessage[0].text2}}</text>
-        <text class="text3">{{mvMessage[0].text3}}</text>
+        <text class="text1">{{item.text1}}</text>
+        <text class="text2">{{item.text2}}</text>
+        <text class="text3">{{item.text3}}</text>
       </view>
     </view>
     <view class="right">
-      <text class="score">{{mvMessage[0].score}}分</text>
+      <text class="score">{{item.score}}分</text>
       <text class="ticket">购票</text>
     </view>
   </view>
-  <view class="item">
-  <view class="left">
-      <image class="images" src="{{mvMessage[1].src}}"></image>
-        <view class="text">
-          <text class="text1">{{mvMessage[1].text1}}</text>
-          <text class="text2">{{mvMessage[1].text2}}</text>
-          <text class="text3">{{mvMessage[1].text3}}</text>
-        </view>
-      </view>
-      <view class="right">
-        <text class="score">{{mvMessage[1].score}}分</text>
-        <text class="ticket">购票</text>
-      </view>
-    </view>
 </view>
