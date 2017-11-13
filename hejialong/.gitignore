@@ -1,0 +1,4 @@
+# 忽略 node_modules/ 文件夹下的所有文件
+node_modules/
+# 忽略 json-server/ 文件夹下的所有文件
+json-server/

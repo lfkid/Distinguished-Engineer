@@ -1,32 +1,44 @@
 <view class="movie-list">
-  <template name="msgItem">
+  <block wx:for="{{movie}}" wx:key="id">
     <view class="item">
       <view class="item-left">
-        <image src="{{imgPath}}"></image>
+        <image src="{{ item.imgPath }}"></image>
       </view>
       <view class="item-middle">
         <view class="title">
-          <text>{{title}}</text>
+          <text>{{ item.title}}</text>
         </view>
         <view class="subtitle">
-          <text>{{subTitle}}</text>
+          <text>{{ item.subTitle }}</text>
         </view>
         <view class="actor">
-          <text>{{actor}}</text>
+          <text>{{ item.actor }}</text>
         </view>
       </view>
       <view class="item-right">
         <view>
-          <text class="score">{{score}}</text>
+          <text class="score">{{ item.score }}分</text>
         </view>
         <view>
-          <navigator class="action" url="/pages/index/index?title={{title}}" hover-class="navigator-hover">{{action}}</navigator>
+          <navigator url="/pages/index/index?id={{title}}">
+            <text class="action">购票</text>
+          </navigator>
         </view>
       </view>
     </view>
-  </template>
-
-  <block wx:for="{{movie}}">
-    <template is="msgItem" data="{{...item}}"></template>
   </block>
+</view>
+
+<view class="footer-fixed">
+  <view class="car">
+    <text>购物车</text>
+  </view>
+  <view class="message">
+    <view class="message-text">
+      <text>结算</text>
+    </view>
+    <view class="message-bubble">
+      <text>1</text>
+    </view>
+  </view>
 </view>
