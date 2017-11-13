@@ -1,17 +1,25 @@
 <!--pages/about/about.wxml-->
-<view class="content">
-  <view class = "img-mes">
-    <view>
-      <image src="/asserts/images/movie/world.jfif" class = "img"></image>
+<template name="movieSelet">
+  <view class="movieSingle">
+    <view class = "img-mes">
+      <view>
+        <image src="/asserts/images/movie/world.jfif" class = "img"></image>
+      </view>
+      <view class="message">
+        <text class = "message-name">{{name}}</text>
+        <text class = "message-intorduce">{{introduce}}</text>
+        <text class = "message-actor">{{actor}}</text>
+      </view>
     </view>
-    <view class="message">
-      <text class = "message-head">从你的世界路过 \r\n</text>
-      <text class = "message-text">那曾打动你的，还会继续温暖你\r\n邓超/白百合/杨洋</text>
+    <view class = "grade-buy">
+      <text class = "grade">{{score}}</text>
+      <button class = "buttonBuy" type="primary" plain="true">购票</button>
     </view>
   </view>
-  <view class = "input">
-    <text class = "input-text">9.0分</text>
-    <button class = "buttonC" type="primary" plain="true">购票</button>
-  </view>
+</template>
+<view class = "movieList">
+  <block wx:for="{{movie}}">
+      <template is="movieSelet" data="{{...item}}"></template>
+  </block>
 </view>
 

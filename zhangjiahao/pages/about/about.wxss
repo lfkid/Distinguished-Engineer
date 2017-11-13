@@ -1,9 +1,15 @@
 /* pages/about/about.wxss */
-.content{
+.movieList{
+  background-color:grey;
+}
+
+.movieSingle{
   display: flex;
   flex-direction: row;
   padding:5px;
   justify-content:space-between;
+  margin-top:1px;
+  background-color:white;
 }
 
 .img-mes{
@@ -17,27 +23,31 @@
 }
 
 .message{
-  margin:5px;
+  display: flex;
+  flex-direction: column;
   height:80px;
 }
-.message-head{
+.message-name{
   font-size:15px;
 }
-.message-text{
+.message-intorduce{
+  font-size:12px;
+}
+.message-actor{
   font-size:12px;
 }
 
-.input{
+.grade-buy{
   width:45px;
   height:80px;
 }
-.input-text{
+.grade{
   padding:10px;
   display: flex;
   font-size:10px;
   align-items:center;
 }
-.buttonC{
+.buttonBuy{
   font-size: 10px;
   margin-top: 60rpx;
   margin-left: 0px;
