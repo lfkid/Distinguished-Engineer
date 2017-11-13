@@ -1,17 +1,19 @@
 <view class="list">
-  <view class="item">
-    <view class="item-left">
-      <image src="{{src}}"></image>
-    </view>
-    <view class="item-middle">
-      <text class="text-title">愤怒的小鸟1</text>
-      <text class="text-desc">爆笑来袭，总有猪在偷笑
+  <block wx:for="{{pic}}">
+    <view class="item">
+      <view class="item-left">
+        <image wx:key="{{item.id}}" src='{{pic[index].src}}'></image>
+      </view>
+      <view class="item-middle">
+        <text class="text-title">{{pic[index].title}}</text>
+        <text class="text-desc">{{pic[index].desc}}
       </text>
-      <text class="text-dubbing"> 杰森 / 乔什 / 丹尼 </text>
+        <text class="text-dubbing"> {{pic[index].dubbing}} </text>
+      </view>
+      <view class="item-right">
+        <text class="text-score">{{pic[index].score}}</text>
+        <button type="primary" size="mini" plain="true"> 购票 </button>
+      </view>
     </view>
-    <view class="item-right">
-      <text class="text-score">8.0分</text>
-      <button type="primary" size="mini" plain="true"> 购票 </button>
-    </view>
-  </view>
+  </block>
 </view>

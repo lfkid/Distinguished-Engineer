@@ -11,15 +11,20 @@
   },
   "tabBar": {
     "color":"#000",
-    "selectedColor":"#f00",
+    "selectedColor":"rgb(255, 139, 86)",
     "backgroundColor":"#fff",
     "borderStyle":"black",
     "list": [{
       "pagePath": "pages/home/home",
+      "iconPath": "asserts/icons/shouye.png",
+      "selectedIconPath": "asserts/icons/shouyefill.png",
       "text": "首页"
     }, {
       "pagePath": "pages/about/about",
+      "iconPath": "asserts/icons/xinxi.png",
+      "selectedIconPath": "asserts/icons/xinxifill.png",
       "text": "关于"
     }]
   }
 }
+
