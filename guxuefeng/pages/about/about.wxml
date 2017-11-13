@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="item" wx:for="{{array1}}" wx:key= id >
+    <view class="picture">
+      <image src="{{item.path}}"></image>
+    </view>
+
+    <view class="introduction">
+      <text calss="text1"> {{item.title}} </text>
+      <text class="text2"> {{item.message}}</text>
+      <text class="text3"> {{item.actor}} </text>
+    </view>
+
+    <view class="purchase">
+      <text class="text4"> {{item.score}}</text>
+      <text class="text5">购票</text>
+    </view>
+  </view>
+</view>
+
+<view class="item2">
+  <view class="positionLeft">
+    <text class="text6"> 付款 </text>
+  </view>
+  <view class="positionRight">
+    <text class="text7">消息 </text>
+  </view>
+  <view class="dot">
+    <text> 2 </text>
+  </view>
+</view>

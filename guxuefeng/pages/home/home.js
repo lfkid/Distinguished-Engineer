@@ -32,18 +32,3 @@ Page({
         }
     }
 })
-
-
-//         this.setData({
-//           array :
-//       
-//     })
-// }
-//   },
-//   minus: function(e) {
-//     if (array.length > 0) {
-//       array.pop()
-//       this.setData({
-//        
-//       })
-//     }
