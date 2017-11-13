@@ -5,7 +5,7 @@ Page({
   },
   onLoad:function(){
     wx.request({
-      url:'http://localhost:3000/posts',
+      url:'http://localhost:3000/mvMessage',
       header:{
         'Content-Type':'application/json'
       },
