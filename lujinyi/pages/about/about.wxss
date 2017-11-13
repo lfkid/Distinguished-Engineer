@@ -1,13 +1,13 @@
 /* pages/about/about.wxss */
 
 .page {
-  background: #a5a3a3;
+  background: #ffffff;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: #fff7f7;
   margin-bottom: 5rpx;
 }
 
