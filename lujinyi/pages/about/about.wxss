@@ -72,3 +72,38 @@
   margin-top:40rpx;
   align-self:center;
 }
+
+.white{
+  height:100rpx;
+}
+
+.account{
+  position:fixed;
+  display:flex;
+  height:100rpx;
+  width:100%;
+  bottom:0rpx;
+}
+
+.accleft{
+  background:#fff;
+  flex-grow:2.5;
+  display:flex;
+  align-items:center;
+}
+
+.accright{
+  background:rgb(255, 138, 29);
+  flex-grow:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.accMessage{
+  margin-left:50rpx;
+}
+
+.accButton{
+  color:#fff;
+}

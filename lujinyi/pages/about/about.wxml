@@ -14,4 +14,13 @@
       <text class="ticket" bindtap="buyTicket">购票</text>
     </view>
   </view>
+  <view class="white"></view>
+  <view class="account">
+    <view class="accleft">
+      <text class="accMessage">结算条条</text>
+    </view>
+    <view class="accright" bindtap="buyTicket">
+      <text class="accButton">结算</text>
+    </view>
+  </view>
 </view>
