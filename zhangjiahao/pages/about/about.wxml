@@ -10,7 +10,7 @@
     </view>
   </view>
   <view class = "input">
-    <text class = "input-text">9.0分\r\n\r\n\r\n</text>
+    <text class = "input-text">9.0分</text>
     <button class = "buttonC" type="primary" plain="true">购票</button>
   </view>
 </view>
