@@ -1,1 +1,74 @@
 /* pages/about/about.wxss */
+.page{
+  background:#a5a3a3;
+}
+
+.item{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  margin-bottom:5rpx;
+}
+
+.left{
+  display:flex;
+}
+
+.right{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+
+.text{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  margin-left:20rpx;
+}
+
+
+.images{
+  width: 150rpx;
+  height: 180rpx;
+  margin-left:10rpx;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+
+.text1{
+  font-size:18pt;
+  margin-top:10rpx;
+}
+
+.text2{
+  font-size:12pt;
+  margin-top:25rpx;
+}
+
+.text3{
+  font-size:12pt;
+  margin-top:5rpx;
+}
+
+.score{
+  font-size:15pt;
+  color:red;
+  align-self:center;
+  margin-top:10rpx;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+
+.ticket{
+  font-size:10pt;
+  color:red;
+  border:4rpx solid red;
+  border-radius:8rpx;
+  text-align:center;
+  padding:8rpx;
+  margin-top:40rpx;
+  align-self:center;
+}

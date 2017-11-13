@@ -1,10 +1,9 @@
 // pages/about/about.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    src: [
+      { src1: '../../res/images/nanaqi.jpg' },
+      { src2: '../../res/images/magic.jpg' }
+    ]
   }
 })

@@ -1,2 +1,31 @@
 <!--pages/about/about.wxml-->
-<text></text>
+<view class="page">
+  <view class="item">
+    <view class="left">
+      <image class="images" src="{{src[0].src1}}"></image>
+      <view class="text">
+        <text class="text1">来自深渊：娜娜奇篇</text>
+        <text class="text2">深渊前进路上的日常</text>
+        <text class="text3">娜娜奇/黎明卿</text>
+      </view>
+    </view>
+    <view class="right">
+      <text class="score">8.7分</text>
+      <text class="ticket">购票</text>
+    </view>
+  </view>
+  <view class="item">
+  <view class="left">
+      <image class="images" src="{{src[1].src2}}"></image>
+        <view class="text">
+          <text class="text1">魔法游行</text>
+          <text class="text2">小魔女学院前传</text>
+          <text class="text3">亚可/戴安娜</text>
+        </view>
+      </view>
+      <view class="right">
+        <text class="score">8.9分</text>
+        <text class="ticket">购票</text>
+      </view>
+    </view>
+</view>
