@@ -1,6 +1,4 @@
-//customers.js
 var faker = require('faker')
-
 function generateMovies () {
   var movies = []
   for (var id = 0; id < 10; id++) {
@@ -23,5 +21,4 @@ function generateMovies () {
   return { "movies": movies }
 }
 
-// 如果你要用json-server的话，就需要export这个生成fake data的function
 module.exports = generateMovies

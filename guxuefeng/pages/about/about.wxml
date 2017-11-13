@@ -12,14 +12,14 @@
 
     <view class="purchase">
       <text class="text4"> {{item.score}}</text>
-      <text class="text5">{{item.buy}}</text>
+      <text class="text5">购票</text>
     </view>
   </view>
 </view>
 
 <view class="item2">
   <view class="positionLeft">
-    <text class="text6"> 结账 </text>
+    <text class="text6"> 付款 </text>
   </view>
   <view class="positionRight">
     <text class="text7">消息 </text>
