@@ -39,8 +39,10 @@
 }
 .buttonC{
 
-  width:45px;
-  height:20px;
-  font-size:8px;
+  font-size: 10px;
+  margin-top: 6px;
+  margin-left: 2px;
+  height: 20px;
+  width: 40px;
 }
 
