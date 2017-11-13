@@ -13,7 +13,9 @@
     </view>
     <view class = "grade-buy">
       <text class = "grade">{{score}}</text>
-      <button class = "buttonBuy" type="primary" plain="true">购票</button>
+      <navigator url="../buy/buy" hover-class="navigator-hover">
+        <button class = "buttonBuy" type="primary" plain="true" >购票</button>
+      </navigator>
     </view>
   </view>
 </template>
