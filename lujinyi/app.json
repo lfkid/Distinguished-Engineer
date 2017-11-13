@@ -18,11 +18,15 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"res/images/wxb主页1.png",
+        "selectedIconPath":"res/images/wxb主页.png"
       },
       {
         "pagePath": "pages/about/about",
-        "text": "关于"
+        "text": "关于",
+        "iconPath":"res/images/wxb明星店铺1.png",
+        "selectedIconPath":"res/images/wxb明星店铺.png"
       }
     ]
   }
