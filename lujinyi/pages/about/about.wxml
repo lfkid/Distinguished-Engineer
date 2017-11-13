@@ -18,6 +18,7 @@
   <view class="account">
     <view class="accleft">
       <text class="accMessage">结算条条</text>
+      <text class="accNum">2</text>
     </view>
     <view class="accright" bindtap="buyTicket">
       <text class="accButton">结算</text>

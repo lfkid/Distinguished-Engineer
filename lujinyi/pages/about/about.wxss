@@ -64,8 +64,8 @@
 
 .ticket{
   font-size:10pt;
-  color:red;
-  border:4rpx solid red;
+  color:#ff0000;
+  border:4rpx solid #ff0000;
   border-radius:8rpx;
   text-align:center;
   padding:8rpx;
@@ -75,6 +75,7 @@
 
 .white{
   height:100rpx;
+  background:#fff;
 }
 
 .account{
@@ -89,11 +90,10 @@
   background:#fff;
   flex-grow:2.5;
   display:flex;
-  align-items:center;
 }
 
 .accright{
-  background:rgb(255, 138, 29);
+  background:#ff8a1d;
   flex-grow:1;
   display:flex;
   align-items:center;
@@ -102,6 +102,19 @@
 
 .accMessage{
   margin-left:50rpx;
+  margin-top:25rpx;
+}
+
+.accNum{
+  height:9pt;
+  color:#fff;
+  border:4rpx solid #ff8a1d;
+  border-radius:50rpx;
+  padding-left:8rpx;
+  padding-right:8rpx;
+  background:rgb(255, 138, 29);
+  font-size:7pt;
+  margin-top:10rpx;
 }
 
 .accButton{
