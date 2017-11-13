@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {  },
+  onLaunch: function () {},
 
   globalData: {
     url: 'http://localhost:3000/movies'

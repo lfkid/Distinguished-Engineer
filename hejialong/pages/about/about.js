@@ -16,6 +16,12 @@ Page({
             movie: list
           });
         }
+      },
+      fail: (res) => {
+        wx.showToast({
+          title: '网络异常',
+          duration: 5000,
+        })
       }
     })
   }

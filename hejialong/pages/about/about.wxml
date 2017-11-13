@@ -1,18 +1,20 @@
 <view class="movie-list">
   <block wx:for="{{movie}}" wx:key="id">
-    <view class="item">
+    <view class="movie-item">
       <view class="item-left">
-        <image src="{{ item.imgPath }}"></image>
-      </view>
-      <view class="item-middle">
-        <view class="title">
-          <text>{{ item.title}}</text>
+        <view class="picture">
+          <image src="{{ item.imgPath }}"></image>
         </view>
-        <view class="subtitle">
-          <text>{{ item.subTitle }}</text>
-        </view>
-        <view class="actor">
-          <text>{{ item.actor }}</text>
+        <view class="desc">
+          <view class="title">
+            <text>{{ item.title }}</text>
+          </view>
+          <view class="subtitle">
+            <text>{{ item.subTitle }}</text>
+          </view>
+          <view class="actor">
+            <text>{{ item.actor }}</text>
+          </view>
         </view>
       </view>
       <view class="item-right">
@@ -20,7 +22,7 @@
           <text class="score">{{ item.score }}分</text>
         </view>
         <view>
-          <navigator url="/pages/index/index?id={{title}}">
+          <navigator url="/pages/index/index?id={{item.id}}">
             <text class="action">购票</text>
           </navigator>
         </view>
