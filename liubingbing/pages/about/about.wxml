@@ -58,3 +58,6 @@
 <view wx:for="{{itemArr}}">
   <template is="templateName" data="{{...itemArr[index]}}" />
 </view>
+<view class="shoppingCar">
+  <text>购物车结算</text>
+</view>
