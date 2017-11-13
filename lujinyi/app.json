@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/about/about",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/buyTicket/buyTicket"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,12 +15,15 @@
     "selectedColor": "#f00",
     "backgroundColor": "#fff",
     "borderStyle": "black",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页"
-    },{
-      "pagePath": "pages/about/about",
-      "text": "关于"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
   }
 }

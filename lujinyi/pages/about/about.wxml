@@ -11,7 +11,7 @@
     </view>
     <view class="right">
       <text class="score">{{item.score}}分</text>
-      <text class="ticket">购票</text>
+      <text class="ticket" bindtap="buyTicket">购票</text>
     </view>
   </view>
 </view>

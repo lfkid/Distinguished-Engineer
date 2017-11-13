@@ -19,5 +19,10 @@ Page({
         score:8.9
       }
     ]
+  },
+  buyTicket:function(e){
+    wx.navigateTo({
+      url: '../buyTicket/buyTicket',
+    })
   }
 })
