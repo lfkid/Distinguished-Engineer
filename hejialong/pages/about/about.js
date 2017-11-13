@@ -3,6 +3,10 @@ const movieApi = app.globalData.url;
 
 Page({
   data: {
+    shopingCart: '购物车',
+    settle: '结算',
+    buyTicket: '购票',
+    bubbleCount: 1,
     movie: [],
   },
 

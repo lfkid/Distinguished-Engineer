@@ -23,7 +23,7 @@
         </view>
         <view>
           <navigator url="/pages/index/index?id={{item.id}}">
-            <text class="action">购票</text>
+            <text class="action">{{ buyTicket }}</text>
           </navigator>
         </view>
       </view>
@@ -32,15 +32,17 @@
 </view>
 
 <view class="footer-fixed">
-  <view class="car">
-    <text>购物车</text>
-  </view>
-  <view class="message">
-    <view class="message-text">
-      <text>结算</text>
+  <view class="shopping-cart">
+    <view class="cart-text">
+      <text>{{ shopingCart }}</text>
     </view>
-    <view class="message-bubble">
-      <text>1</text>
+    <view class="cart-bubble">
+      <text>{{ bubbleCount }}</text>
+    </view>
+  </view>
+  <view class="settle">
+    <view class="settle-text">
+      <text>{{ settle }}</text>
     </view>
   </view>
 </view>
