@@ -1,2 +1,48 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class="movie-list">
+  <block wx:for="{{ movie }}" wx:key="id">
+    <view class="movie-item">
+      <view class="item-left">
+        <view class="picture">
+          <image src="{{ item.imgPath }}"></image>
+        </view>
+        <view class="desc">
+          <view class="title">
+            <text>{{ item.title }}</text>
+          </view>
+          <view class="subtitle">
+            <text>{{ item.subTitle }}</text>
+          </view>
+          <view class="actor">
+            <text>{{ item.actor }}</text>
+          </view>
+        </view>
+      </view>
+      <view class="item-right">
+        <view>
+          <text class="score">{{ item.score }}分</text>
+        </view>
+        <view>
+          <navigator url="/pages/index/index?id={{item.id}}">
+            <text class="action">{{ buyTicket }}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="footer-fixed">
+  <view class="shopping-cart">
+    <view class="cart-text">
+      <text>{{ shopingCart }}</text>
+    </view>
+    <view class="cart-bubble">
+      <text>{{ bubbleCount }}</text>
+    </view>
+  </view>
+  <view class="settle">
+    <view class="settle-text">
+      <text>{{ settle }}</text>
+    </view>
+  </view>
+</view>
