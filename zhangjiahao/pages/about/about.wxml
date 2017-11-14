@@ -1,4 +1,56 @@
 <!--pages/about/about.wxml-->
+<template name="movieSelet">
+  <view class="movieSingle">
+    <view class = "img-mes">
+      <view>
+        <image src="/asserts/images/movie/world.jfif" class = "img"></image>
+      </view>
+      <view class="message">
+        <text class = "message-name">{{name}}</text>
+        <text class = "message-intorduce">{{introduce}}</text>
+        <text class = "message-actor">{{actor}}</text>
+      </view>
+    </view>
+    <view class = "grade-buy">
+      <text class = "grade">{{score}}</text>
+      <navigator url="../buy/buy" hover-class="navigator-hover">
+        <button class = "buttonBuy" type="primary" plain="true" >购票</button>
+      </navigator>
+    </view>
+  </view>
+</template>
 
-<button type="primary" size="mini"  plain="{{plain}}"
-      > add </button>
+<view class = "movieList" wx:if="{{isloaded==1?true:false}}">
+  <view class="headLine">
+    <view class="movieKind">
+      <view class="hoting1">
+        <text class = "hoting" bindtap="movieKindTap" id ="hoting">热映</text>
+        <view class ="underLine" hidden="{{movieKindFlag==1?false:true}}"></view>
+      </view>
+
+      <view class="waiting1">
+        <text class = "waiting" bindtap="movieKindTap" id ="waiting">待映</text>
+        <view class ="underLine" hidden="{{movieKindFlag==2?false:true}}"></view>
+      </view>
+    </view>
+  </view>
+
+  <block wx:for="{{movieKindFlag==1?movie:movie1}}">
+    <template is="movieSelet" data="{{...item}}"></template>
+  </block>
+</view>
+
+
+<view class = "bottomBar" wx:if="{{isloaded==1?true:false}}">
+  <view class ="shopCart">
+    <text class ="CartText">购物车</text>
+    <text class ="CartNum">1</text>
+  </view>
+  <view class = "account">
+    <text class ="accText">结算</text>
+  </view>
+</view>
+
+<view class = "loadfail" wx:if="{{isloaded==2?true:false}}">
+  加载失败了呢
+</view>

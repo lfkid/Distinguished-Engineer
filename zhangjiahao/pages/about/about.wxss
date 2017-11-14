@@ -1,1 +1,151 @@
 /* pages/about/about.wxss */
+
+.headLine{
+  height:30px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+}
+.movieKind{
+  width:150px;
+  display: flex;
+  justify-content: space-between;
+}
+.hoting1{
+  height:100%;
+}
+.hoting{
+}
+.waiting1{
+  height:100%;
+}
+.waiting{
+
+}
+.underLine{
+  margin-top:2px;
+  height:2px;
+  background-color:grey;
+}
+
+.movieList{
+  background-color:grey;
+}
+
+.movieSingle{
+  display: flex;
+  flex-direction: row;
+  margin-top:1px;
+  padding:5px;
+  justify-content:space-between;
+  background-color:white;
+}
+
+.img-mes{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.img{
+  margin-right:5px;
+  width:70px;height:90px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  margin-right:5px;
+  height:80px;
+}
+.message-name{
+  font-size:15px;
+}
+.message-intorduce{
+  font-size:12px;
+  display:-webkit-box !important;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  word-break:break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.message-actor{
+  font-size:12px;
+}
+
+.grade-buy{
+  width:50px;
+  height:80px;
+}
+.grade{
+  padding-left:10px;
+  display: flex;
+  align-items:center;
+  font-size:10px;
+}
+.buttonBuy{
+  width: 80rpx;
+  height: 40rpx;
+  margin-top: 60rpx;
+  margin-left: 0px;
+  padding:0px;
+  padding-bottom:5px;
+  font-size: 10px;
+}
+
+.bottomBar{
+  position:fixed;
+  bottom:0rpx;
+  height:40px;
+  display: flex;
+  flex-direction: row;
+  background-color:yellow;
+  width:100%;
+}
+.shopCart{
+width:40px;
+height:100%;
+}
+
+.CartText{
+
+position:fixed;
+z-index:1;
+left:10px;
+bottom:5px;
+}
+
+.CartNum{
+position:fixed;
+z-index:2;
+left:60px;
+width:15px;
+height:15px;
+background-color:red;
+padding-left:4px;
+padding-bottom:3px;
+border-radius: 20px;
+font-size:15px;
+color:white;
+}
+
+.account{
+  position:fixed;
+
+  right:0px;
+  width:50px;
+  height:100%;
+  padding-top:6px;
+  background-color:green;
+}
+
+.accText{
+margin-left:10px;
+font-size:15px;
+color:white;
+}
+
+.loadfail{
+  display: flex;
+  justify-content:center;
+}
