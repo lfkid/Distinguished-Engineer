@@ -11,7 +11,7 @@ function getMvMessage() {
 
         mvMessage.push({
             "id": id,
-            "src": '../../res/images/image' + (Math.random() * 30).toFixed(0) + '.jpg',
+            "src": '../../res/images/image' + Math.ceil(Math.random() * 30) + '.jpg',
             "text1": text1,
             "text2": text2,
             "text3": name1 + '/' + name2,

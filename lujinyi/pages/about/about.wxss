@@ -39,16 +39,28 @@
 .text1 {
   font-size: 16pt;
   margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:470rpx;
 }
 
 .text2 {
   font-size: 12pt;
   margin-top: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:470rpx;
 }
 
 .text3 {
   font-size: 12pt;
   margin-top: 5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:470rpx;
 }
 
 .score {
