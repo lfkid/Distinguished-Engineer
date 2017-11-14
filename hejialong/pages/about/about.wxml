@@ -1,5 +1,5 @@
 <view class="movie-list">
-  <block wx:for="{{movie}}" wx:key="id">
+  <block wx:for="{{ movie }}" wx:key="id">
     <view class="movie-item">
       <view class="item-left">
         <view class="picture">

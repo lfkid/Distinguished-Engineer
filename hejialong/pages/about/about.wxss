@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-bottom: 82rpx;
+  margin-bottom: 120rpx;
 }
 
 .movie-item {
@@ -16,23 +16,23 @@
   height: 240rpx;
   align-items: center;
   justify-content: space-between;
-  border: 2rpx solid rgb(241, 241, 241);
+  border: 2rpx solid #f1f1f1;
 }
 
 .item-left {
   display: flex;
   flex-direction: row;
-  width: 85%;
+  width: 80%;
 }
 
 image {
   display: block;
   width: 120rpx;
   height: 180rpx;
+  margin-right: 20rpx;
 }
 
 .desc {
-  margin-left: 20rpx;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -90,8 +90,7 @@ image {
   bottom: 0;
   left: 0;
   height: 120rpx;
-  background-color: #fff;
-  border-top: 1px solid rgb(200, 200, 200);
+  background-color: #e6e6e6;
 }
 
 .shopping-cart {
@@ -115,7 +114,9 @@ image {
 .cart-text {
   text-align: center;
 }
+
 /* 结算 */
+
 .settle {
   display: flex;
   flex-direction: column;
@@ -127,3 +128,6 @@ image {
   color: white;
 }
 
+.settle-text {
+  font-weight: bold;
+}
