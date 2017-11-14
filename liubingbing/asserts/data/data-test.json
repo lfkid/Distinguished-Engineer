@@ -1,0 +1,25 @@
+{
+  "itemArr": [
+    {
+    "url": "../../asserts/images/home/5.jpg",
+    "title": "樱桃小丸子:来自意大利的少年",
+    "content": "小丸子恋美少年，他竟然不是花轮",
+    "autor": "矶野鳕子/屋良有作/一龙斋贞友",
+    "score": "7.8分"
+  },
+  {
+    "url": "../../asserts/images/home/1.jpg",
+    "title": "追凶者也",
+    "content": "一桩山村凶杀案，三个蠢萌逃亡汉",
+
+    "autor": "刘烨/张泽/段播文/王子文",
+    "score": "7.8分"
+  },
+  {
+    "url": "../../asserts/images/home/2.jpg",
+    "title": "七月与安生",
+    "content": "娇滴闺蜜似蜜糖，甜到人家心好慌",
+    "autor": "周冬雨/马思纯/李程彬",
+    "score": "8.6分"
+  }]
+}
