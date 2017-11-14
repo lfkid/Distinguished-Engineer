@@ -7,8 +7,8 @@
 .item {
   display: flex;
   justify-content: space-between;
-  background: #fff7f7;
   margin-bottom: 5rpx;
+  background: #fff7f7;
 }
 
 .left {
@@ -16,63 +16,62 @@
 }
 
 .right {
-  height:100%;
   display: flex;
   flex-direction: column;
+  height:100%;
 }
 
 .text {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin-left: 20rpx;
 }
 
 .images {
   width: 150rpx;
   height: 180rpx;
-  margin-left: 10rpx;
   margin-top: 10rpx;
+  margin-left: 10rpx;
   margin-bottom: 10rpx;
 }
 
 .text1 {
-  font-size: 16pt;
+  width:470rpx;
   margin-top: 10rpx;
   overflow: hidden;
+  font-size: 16pt;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width:470rpx;
 }
 
 .text2 {
-  font-size: 12pt;
   margin-top: 25rpx;
+  width:470rpx;
   overflow: hidden;
+  font-size: 12pt;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width:470rpx;
 }
 
 .text3 {
-  font-size: 12pt;
   margin-top: 5rpx;
+  width:470rpx;
   overflow: hidden;
+  font-size: 12pt;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width:470rpx;
 }
 
 .score {
-  font-size: 12pt;
+  width:100%;
   color: red;
   margin-top: 30rpx;
   margin-right: 20rpx;
-  width:100%;
+  font-size: 12pt;
 }
 
 .ticket {
-  font-size: 8pt;
   color: #ff0000;
   border: 4rpx solid #ff0000;
   border-radius: 8rpx;
@@ -80,6 +79,7 @@
   margin-top: 40rpx;
   margin-right:20rpx;
   align-self:center;
+  font-size: 8pt;
 }
 
 .white {
@@ -89,25 +89,25 @@
 
 .account {
   position: fixed;
-  display: flex;
   height: 100rpx;
   width: 100%;
-  bottom: 0rpx;
+  bottom: 0;
   background: #fff;
+  display: flex;
 }
 
 .accleft {
   background: #fff;
-  flex-grow: 2.5;
   display: flex;
+  flex-grow: 2.5;
 }
 
 .accright {
   background: #ff8a1d;
-  flex-grow: 1;
   display: flex;
-  align-items: center;
+  flex-grow: 1;
   justify-content: center;
+  align-items: center;
 }
 
 .accMessage {
@@ -117,14 +117,14 @@
 
 .accNum {
   height: 9pt;
+  background: rgb(255, 138, 29);
   color: #fff;
+  margin-top: 10rpx;
   border: 4rpx solid #ff8a1d;
   border-radius: 50rpx;
   padding-left: 8rpx;
   padding-right: 8rpx;
-  background: rgb(255, 138, 29);
   font-size: 7pt;
-  margin-top: 10rpx;
 }
 
 .accButton {
