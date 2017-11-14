@@ -7,12 +7,12 @@ Page({
   },
   onLoad: function () {
     wx.request({
-      url: 'http://localhost:3000/itemArr',
+      url: 'http://localhost:3000/movies',
       headers: {
         'Content-Type': 'application/json'
       },
       success: (res) => {
-        //将获取到的json数据，存在名字叫zhihu的这个数组中
+        //将获取到的json数据，存在名字叫itemArr的这个数组中
         let temp = res.data;
         this.setData({
           itemArr: temp,
