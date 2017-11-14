@@ -6,8 +6,7 @@
       </view>
       <view class="item-middle">
         <text class="text-title">{{movie[index].title}}</text>
-        <text class="text-desc">{{movie[index].desc}}
-      </text>
+        <text class="text-desc">{{movie[index].desc}}</text>
         <text class="text-dubbing"> {{movie[index].dubbing}} </text>
       </view>
       <view class="item-right">
@@ -16,4 +15,8 @@
       </view>
     </view>
   </block>
+  <view class="fixed">
+    <text class="cart">{{cart}}</text>
+    <text class="balance">{{balance}}</text>
+  </view>
 </view>
