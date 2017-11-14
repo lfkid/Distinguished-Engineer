@@ -93,6 +93,7 @@
   height: 100rpx;
   width: 100%;
   bottom: 0rpx;
+  background: #fff;
 }
 
 .accleft {
