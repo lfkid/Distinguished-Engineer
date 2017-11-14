@@ -1,4 +1,33 @@
 /* pages/about/about.wxss */
+
+.headLine{
+  height:30px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+}
+.movieKind{
+  width:150px;
+  display: flex;
+  justify-content: space-between;
+}
+.hoting1{
+  height:100%;
+}
+.hoting{
+}
+.waiting1{
+  height:100%;
+}
+.waiting{
+
+}
+.underLine{
+  margin-top:2px;
+  height:2px;
+  background-color:grey;
+}
+
 .movieList{
   background-color:grey;
 }
@@ -6,9 +35,9 @@
 .movieSingle{
   display: flex;
   flex-direction: row;
+  margin-top:1px;
   padding:5px;
   justify-content:space-between;
-  margin-top:1px;
   background-color:white;
 }
 
@@ -25,6 +54,7 @@
 .message{
   display: flex;
   flex-direction: column;
+  margin-right:5px;
   height:80px;
 }
 .message-name{
@@ -32,76 +62,85 @@
 }
 .message-intorduce{
   font-size:12px;
+  display:-webkit-box !important;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  word-break:break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .message-actor{
   font-size:12px;
 }
 
 .grade-buy{
-  width:45px;
+  width:50px;
   height:80px;
 }
 .grade{
-  padding:10px;
+  padding-left:10px;
   display: flex;
-  font-size:10px;
   align-items:center;
+  font-size:10px;
 }
 .buttonBuy{
-  font-size: 10px;
+  width: 80rpx;
+  height: 40rpx;
   margin-top: 60rpx;
   margin-left: 0px;
   padding:0px;
-  height: 40rpx;
-  width: 80rpx;
+  padding-bottom:5px;
+  font-size: 10px;
 }
 
 .bottomBar{
-  display: flex;
-  flex-direction: row;
   position:fixed;
   bottom:0rpx;
   height:40px;
+  display: flex;
+  flex-direction: row;
   background-color:yellow;
   width:100%;
 }
-.see{
+.shopCart{
 width:40px;
 height:100%;
-
 }
 
-.seeText{
+.CartText{
+
 position:fixed;
-bottom:0px;
+z-index:1;
+left:10px;
+bottom:5px;
 }
 
-.mes{
-
-
-}
-
-.mesText{
-font-size:15px;
+.CartNum{
 position:fixed;
-border-radius: 20px;
+z-index:2;
+left:60px;
 width:15px;
 height:15px;
 background-color:red;
-color:white;
-padding-left:3px;
+padding-left:4px;
 padding-bottom:3px;
+border-radius: 20px;
+font-size:15px;
+color:white;
 }
 
 .account{
   position:fixed;
+
+  right:0px;
   width:50px;
   height:100%;
-  right:0px;
+  padding-top:6px;
   background-color:green;
-  padding:10px;
 }
 
 .accText{
-
+margin-left:10px;
+font-size:15px;
+color:white;
 }

@@ -20,17 +20,28 @@
   </view>
 </template>
 <view class = "movieList">
+  <view class="headLine">
+    <view class="movieKind">
+      <view class="hoting1">
+        <text class = "hoting">热映</text>
+        <view class ="underLine" hidden="{{true}}"></view>
+      </view>
+      <view class="waiting1">
+        <text class = "waiting">待映</text>
+        <view class ="underLine"></view>
+      </view>
+    </view>
+  </view>
   <block wx:for="{{movie}}">
-      <template is="movieSelet" data="{{...item}}"></template>
+    <template is="movieSelet" data="{{...item}}"></template>
   </block>
 </view>
 
+
 <view class = "bottomBar">
-  <view class ="see">
-    <text class ="seeText">查看</text>
-  </view>
-  <view class ="mes">
-    <text class ="mesText">2</text>
+  <view class ="shopCart">
+    <text class ="CartText">购物车</text>
+    <text class ="CartNum">1</text>
   </view>
   <view class = "account">
     <text class ="accText">结算</text>
