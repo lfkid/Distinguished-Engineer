@@ -19,26 +19,29 @@
     </view>
   </view>
 </template>
-<view class = "movieList">
+
+<view class = "movieList" wx:if="{{isloaded==1?true:false}}">
   <view class="headLine">
     <view class="movieKind">
       <view class="hoting1">
-        <text class = "hoting">热映</text>
-        <view class ="underLine" hidden="{{true}}"></view>
+        <text class = "hoting" bindtap="movieKindTap" id ="hoting">热映</text>
+        <view class ="underLine" hidden="{{movieKindFlag==1?false:true}}"></view>
       </view>
+
       <view class="waiting1">
-        <text class = "waiting">待映</text>
-        <view class ="underLine"></view>
+        <text class = "waiting" bindtap="movieKindTap" id ="waiting">待映</text>
+        <view class ="underLine" hidden="{{movieKindFlag==2?false:true}}"></view>
       </view>
     </view>
   </view>
-  <block wx:for="{{movie}}">
+
+  <block wx:for="{{movieKindFlag==1?movie:movie1}}">
     <template is="movieSelet" data="{{...item}}"></template>
   </block>
 </view>
 
 
-<view class = "bottomBar">
+<view class = "bottomBar" wx:if="{{isloaded==1?true:false}}">
   <view class ="shopCart">
     <text class ="CartText">购物车</text>
     <text class ="CartNum">1</text>
@@ -48,3 +51,6 @@
   </view>
 </view>
 
+<view class = "loadfail" wx:if="{{isloaded==2?true:false}}">
+  加载失败了呢
+</view>
