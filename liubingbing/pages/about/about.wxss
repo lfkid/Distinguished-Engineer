@@ -39,17 +39,20 @@
 .title {
   font-size: 15px;
   font-weight: bold;
+  width:220px;
 }
 
 .description {
   margin-top: 5rpx;
   font-size: 14px;
   color: #666666;
+  width:220px;
 }
 
 .authors {
   font-size: 14px;
   color: #666666;
+  width:220px;
 }
 
 .score {
