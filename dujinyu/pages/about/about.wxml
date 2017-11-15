@@ -16,3 +16,12 @@
   </view>
 
 </view>
+
+<view class="checkOutBar">
+  <view class="cart">购物车</view>
+  <view class="checkOut">去结算</view>
+</view>
+<view class="circle">
+<view class="num">5</view>
+</view>
+

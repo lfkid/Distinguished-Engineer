@@ -51,7 +51,7 @@ image {
 .text-score {
   margin-left: 5px;
   font-size: 20px;
-  color: rgb(241,12,12);
+  color: rgb(241, 12, 12);
 }
 
 button {
@@ -59,3 +59,43 @@ button {
   font-size: 10px;
 }
 
+.checkOutBar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0px;
+  background-color: rgb(211, 203, 203);
+  width: 100%;
+  height: 30px;
+}
+
+.cart {
+  margin-left: 0px;
+  height: 30px;
+  background-color: yellow;
+  font-size: 20px;
+  /*width: 20px;*/
+}
+
+.checkOut {
+  margin-right: 0px;
+  height: 30px;
+  background-color: red;
+  font-size: 20px;
+}
+
+.circle {
+  position: fixed;
+  bottom:20px;
+  right: 0px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(35, 219, 35);
+}
+.num{
+  margin-left:5px;
+  justify-content:center;
+  font-size: 15px;
+}

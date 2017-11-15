@@ -20,6 +20,41 @@ Page({
         description: "那曾经打动你的，还会继续温暖你",
         performers: "邓超/白百何/杨洋/张天爱",
         score: "8.0分",
+      },
+      {
+        url: "../../asserts/images/about/wanqian.jpg",
+        title: "从你的全世界路过",
+        description: "那曾经打动你的，还会继续温暖你",
+        performers: "邓超/白百何/杨洋/张天爱",
+        score: "8.0分",
+      },
+      {
+        url: "../../asserts/images/about/wanqian.jpg",
+        title: "从你的全世界路过",
+        description: "那曾经打动你的，还会继续温暖你",
+        performers: "邓超/白百何/杨洋/张天爱",
+        score: "8.0分",
+      },
+      {
+        url: "../../asserts/images/about/wanqian.jpg",
+        title: "从你的全世界路过",
+        description: "那曾经打动你的，还会继续温暖你",
+        performers: "邓超/白百何/杨洋/张天爱",
+        score: "8.0分",
+      },
+      {
+        url: "../../asserts/images/about/wanqian.jpg",
+        title: "从你的全世界路过",
+        description: "那曾经打动你的，还会继续温暖你",
+        performers: "邓超/白百何/杨洋/张天爱",
+        score: "8.0分",
+      },
+      {
+        url: "../../asserts/images/about/wanqian.jpg",
+        title: "从你的全世界路过",
+        description: "那曾经打动你的，还会继续温暖你",
+        performers: "邓超/白百何/杨洋/张天爱",
+        score: "8.0分",
       }
     ]
   },
