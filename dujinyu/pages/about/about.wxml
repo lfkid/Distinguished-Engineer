@@ -1,18 +1,18 @@
 <view wx:for="{{itemArray}}">
 
-    <view class="item">
-      <view class="item-left">
-        <image src="{{item.url}}"></image>
-      </view>
-      <view class="item-middle">
-        <text class="text-title">{{item.title}}</text>
-        <text class="text-description">{{item.description}}</text>
-        <text class="text-performer">{{item.performers}}</text>
-      </view>
-      <view class="item-right">
-        <text class="text-score">{{item.score}}</text>
-        <button type="primary" size="mini" plain="true"> 购票 </button>
-      </view>
+  <view class="item">
+    <view class="item-left">
+      <image src="{{item.url}}"></image>
     </view>
+    <view class="item-middle">
+      <text class="text-title">{{item.title}}</text>
+      <text class="text-description">{{item.description}}</text>
+      <text class="text-performer">{{item.performers}}</text>
+    </view>
+    <view class="item-right">
+      <text class="text-score">{{item.score}}</text>
+      <button type="primary" size="mini" plain="true" bindtap="buyTicket"> 购票 </button>
+    </view>
+  </view>
 
 </view>
