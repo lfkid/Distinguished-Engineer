@@ -32,3 +32,14 @@
 
 ![这里写图片描述](http://img.blog.csdn.net/20171113094909344?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3VuX19fc2h5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
+---
+## 王旭阳的第四次作业
+
+1.增加购物车和结算底栏;
+
+2.增加顶部热映和待映转换页面;
+
+3.从faker引入电影数据;
+
+4.修复iphone5适应不了界面bug;
+
