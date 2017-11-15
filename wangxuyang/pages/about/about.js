@@ -8,7 +8,7 @@ Page({
   onLoad: function () {
     var that = this
     wx.request({
-      url: 'http://localhost:3000/posts',
+      url: 'http://localhost:3000/movie',
       success: (res) => {
         // console.log(res.data)
         that.setData({

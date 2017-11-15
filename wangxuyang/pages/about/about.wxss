@@ -7,6 +7,7 @@
 .item {
   height: 120px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -18,6 +19,8 @@ image {
 
 button {
   margin-right: 10px;
+  width: 65px;
+  text-align: center;
 }
 
 .text-title {
@@ -38,6 +41,7 @@ button {
 
 .text-score {
   margin-left: 8px;
+  text-align: center;
   font-size: 20px;
   color: rgb(255, 139, 86);
 }
@@ -50,7 +54,8 @@ button {
 
 .item-middle {
   display: flex;
-  flex-grow: 2;
+  width: 45%;
+  height: 120px;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 10px;
@@ -59,6 +64,8 @@ button {
 
 .item-right {
   display: flex;
+  width: 22%;
+  height: 120px;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 5px;
@@ -71,7 +78,7 @@ button {
   width: 100%;
   flex-direction: row;
   bottom: 0;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(218, 209, 209);
 }
 
 .cart {
@@ -95,12 +102,13 @@ button {
 
 .message {
   position: absolute;
-  top: 0px;
+  top: 3px;
   left: 43%;
   width: 20px;
-  height:20px;
-  text-align:center;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
   border-radius: 50%;
   color: rgb(250, 250, 250);
-  background-color: rgb(253, 4, 4);
+  background-color: rgb(253, 0, 0);
 }
