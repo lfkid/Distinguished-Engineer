@@ -2,7 +2,8 @@ Page({
   data: {
     movie: [],
     cart: '购物车',
-    balance:'结算'
+    balance: '结算',
+    message: '1'
   },
   onLoad: function () {
     var that = this

@@ -18,5 +18,6 @@
   <view class="fixed">
     <text class="cart">{{cart}}</text>
     <text class="balance">{{balance}}</text>
+    <text class="message">{{message}}</text>
   </view>
 </view>
