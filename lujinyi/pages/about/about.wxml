@@ -1,2 +1,27 @@
 <!--pages/about/about.wxml-->
-<text></text>
+<view class="page">
+  <view class="item" wx:for="{{mvMessage}}">
+    <view class="left">
+      <image class="images" src="{{item.src}}"></image>
+      <view class="text">
+        <text class="text1">{{item.text1}}</text>
+        <text class="text2">{{item.text2}}</text>
+        <text class="text3">{{item.text3}}</text>
+      </view>
+    </view>
+    <view class="right">
+      <text class="score">{{item.score}}分</text>
+      <text class="ticket" bindtap="buyTicket">购票</text>
+    </view>
+  </view>
+  <view class="white"></view>
+  <view class="account">
+    <view class="accleft">
+      <text class="accMessage">结算条条</text>
+      <text class="accNum">2</text>
+    </view>
+    <view class="accright" bindtap="buyTicket">
+      <text class="accButton">结算</text>
+    </view>
+  </view>
+</view>

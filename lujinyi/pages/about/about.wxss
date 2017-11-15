@@ -1,1 +1,132 @@
 /* pages/about/about.wxss */
+
+.page {
+  background: #ffffff;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+  background: #fff7f7;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 20rpx;
+}
+
+.images {
+  width: 150rpx;
+  height: 180rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.text1 {
+  width:470rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  font-size: 16pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text2 {
+  margin-top: 25rpx;
+  width:470rpx;
+  overflow: hidden;
+  font-size: 12pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text3 {
+  margin-top: 5rpx;
+  width:470rpx;
+  overflow: hidden;
+  font-size: 12pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score {
+  width:100%;
+  color: red;
+  margin-top: 30rpx;
+  margin-right: 20rpx;
+  font-size: 12pt;
+}
+
+.ticket {
+  color: #ff0000;
+  border: 4rpx solid #ff0000;
+  border-radius: 8rpx;
+  padding: 6rpx;
+  margin-top: 40rpx;
+  margin-right:20rpx;
+  align-self:center;
+  font-size: 8pt;
+}
+
+.white {
+  height: 100rpx;
+  background: #fff;
+}
+
+.account {
+  position: fixed;
+  height: 100rpx;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+}
+
+.accleft {
+  background: #fff;
+  display: flex;
+  flex-grow: 2.5;
+}
+
+.accright {
+  background: #ff8a1d;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.accMessage {
+  margin-left: 50rpx;
+  margin-top: 25rpx;
+}
+
+.accNum {
+  height: 9pt;
+  background: rgb(255, 138, 29);
+  color: #fff;
+  margin-top: 10rpx;
+  border: 4rpx solid #ff8a1d;
+  border-radius: 50rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  font-size: 7pt;
+}
+
+.accButton {
+  color: #fff;
+}
