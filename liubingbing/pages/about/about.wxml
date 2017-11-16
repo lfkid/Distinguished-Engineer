@@ -49,12 +49,12 @@
 </block>
 
 <!-- 隐藏的view，可以看作是隐藏的page -->
-<!-- <block wx:for="{{waitItemArr}}" wx:key="{{id}}">
+ <block wx:for="{{waitItemArr}}" wx:key="{{id}}">
   <view hidden="{{!tbflag & !loadflag}}">
     <template is="templateName2" data="{{...waitItemArr[index]}}" />
   </view>
 </block>
-
+<!--
 <view hidden="{{!loadflag}}">
   <text>网络请求失败</text>
 </view> -->
