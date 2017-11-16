@@ -1,43 +1,105 @@
 // pages/about/about.js
+const app =getApp()
 Page({
   data: {
     buyticketTitle: "购票",
-    //将每电影的信息存放在一个数组中，然只需要遍历这个数组就可以得所有的信息，然放相应位置
-    itemArr: []
+    onSaleTicket: "预售",
+    itemArr: [],
+    waitItemArr: [],
+    flag: false,
+    tbflag: true,
+    loadflag:false
   },
-  onLoad: function () {
+  onReady: function () {
+    //初始提框
+    // wx.showLoading({
+    //   title: '加载中',
+    // })
     wx.request({
-      url: 'http://localhost:3000/movies',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      success: (res) => {
-        //将获取到的json数据，存在名字叫itemArr的这个数组中
-        let temp = res.data;
-        this.setData({
-          itemArr: temp,
-        });
-        console.log(res)
-      },
-      fail: (res) => {
-        console.log('error')
-      }
-    })
+        url: app.globalData.movieDataUrl,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        success: (res) => {
+          this.setData({
+            itemArr: res.data,
+          });
+          // wx.showLoading({
+          //   title: '成功',
+          // });
+          // setTimeout(function () {
+          //   wx.hideLoading()
+          // }, 500);
+          console.log(res)
+        },
+        fail: (res) => {
+          console.log('error');
+          this.setData({
+            loadflag: true,
+          });
+          // wx.showLoading({
+          //   title: '失败',
+          // })
+          // setTimeout(function () {
+          //   wx.hideLoading()
+          // }, 1000);
+        }
+      }),
+      wx.request({
+        url:app.globalData.waitMovieDataUrl,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        success: (res) => {
+          this.setData({
+            waitItemArr: res.data,
+          });
+          // wx.showLoading({
+          //   title: '成功',
+          // });
+          // setTimeout(function () {
+          //   wx.hideLoading()
+          // }, 500);
+          console.log(res)
+        },
+        fail: (res) => {
+          console.log('error');
+          this.setData({
+            loadflag: true,
+          });
+          // wx.showLoading({
+          //   title: '失败',
+          // })
+          // setTimeout(function () {
+          //   wx.hideLoading()
+          // }, 1000);
+        }
+      })
   },
 
   //路由点按钮得到一事件，然跳转到其他的pag页中
   buyTicket: function (event) {
     wx.navigateTo({
       url: '../welToBuy/welToBuy',
-      success: function(res){
+      success: function (res) {
         // success
       },
-      fail: function() {
+      fail: function () {
         // fail
       },
-      complete: function() {
+      complete: function () {
         // complete
       }
+    })
+  },
+  hotText: function (e) {
+    this.setData({
+      tbflag: false
+    })
+  },
+  waitText: function (e) {
+    this.setData({
+      tbflag: true
     })
   }
 })
