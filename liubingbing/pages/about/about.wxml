@@ -54,10 +54,10 @@
     <template is="templateName2" data="{{...waitItemArr[index]}}" />
   </view>
 </block>
-<!--
+
 <view hidden="{{!loadflag}}">
   <text>网络请求失败</text>
-</view> -->
+</view>
 
 <!-- 为了解决footer遮挡住最后一条数据 -->
 <view style="height:100rpx;" />
