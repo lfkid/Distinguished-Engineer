@@ -42,11 +42,11 @@
   <text class="waitText{{tbflag ? 2 : 1}}" bindtap="waitText">待映</text>
 </view>
 
-<!-- <block wx:for="{{itemArr}}" wx:key="{{id}}">
+<block wx:for="{{itemArr}}" wx:key="{{id}}">
   <view hidden="{{tbflag | loadflag }}">
     <template is="templateName" data="{{...itemArr[index]}}" />
   </view>
-</block> -->
+</block>
 
 <!-- 隐藏的view，可以看作是隐藏的page -->
 <!-- <block wx:for="{{waitItemArr}}" wx:key="{{id}}">
