@@ -1,0 +1,50 @@
+<view class="top-bar">
+  <text class="hoting {{tap ? 'tap-hoting' : ''}}" bindtap="tapLeft">{{hoting}}</text>
+  <text class="waitting {{tap ? '' : 'tap-waitting'}}" bindtap="tapRight">{{waitting}}</text>
+</view>
+<view class="list" hidden="{{!tap}}">
+  <block wx:for="{{movie}}">
+    <view class="item">
+      <view class="item-left">
+        <image wx:key="{{item.id}}" src='{{movie[index].src}}'></image>
+      </view>
+      <view class="item-middle">
+        <text class="text-title">{{movie[index].title}}</text>
+        <text class="text-desc">{{movie[index].desc}}</text>
+        <text class="text-dubbing"> {{movie[index].dubbing}} </text>
+      </view>
+      <view class="item-right">
+        <text class="text-score">{{movie[index].score}}</text>
+        <button type="primary" size="mini" plain="true"> 购票 </button>
+      </view>
+    </view>
+  </block>
+  <view class="fixed">
+    <text class="cart">{{cart}}</text>
+    <text class="balance">{{balance}}</text>
+    <text class="message">{{message}}</text>
+  </view>
+</view>
+<view class="list" hidden="{{tap}}">
+  <block wx:for="{{movie1}}">
+    <view class="item">
+      <view class="item-left">
+        <image wx:key="{{item.id}}" src='{{movie1[index].src}}'></image>
+      </view>
+      <view class="item-middle">
+        <text class="text-title">{{movie1[index].title}}</text>
+        <text class="text-desc">{{movie1[index].desc}}</text>
+        <text class="text-dubbing"> {{movie1[index].dubbing}} </text>
+      </view>
+      <view class="item-right">
+        <text class="text-score">{{movie1[index].booking}}</text>
+        <button type="primary" size="mini" plain="true"> 预约 </button>
+      </view>
+    </view>
+  </block>
+  <view class="fixed">
+    <text class="cart">{{cart}}</text>
+    <text class="balance">{{balance}}</text>
+    <text class="message">{{message}}</text>
+  </view>
+</view>
