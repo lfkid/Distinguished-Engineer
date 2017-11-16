@@ -12,9 +12,9 @@ Page({
   },
   onReady: function () {
     //初始提框
-    // wx.showLoading({
-    //   title: '加载中',
-    // })
+    wx.showLoading({
+      title: '加载中',
+    })
     wx.request({
         url: app.globalData.movieDataUrl,
         headers: {
@@ -24,12 +24,12 @@ Page({
           this.setData({
             itemArr: res.data,
           });
-          // wx.showLoading({
-          //   title: '成功',
-          // });
-          // setTimeout(function () {
-          //   wx.hideLoading()
-          // }, 500);
+          wx.showLoading({
+            title: '成功',
+          });
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 500);
           console.log(res)
         },
         fail: (res) => {
@@ -37,12 +37,12 @@ Page({
           this.setData({
             loadflag: true,
           });
-          // wx.showLoading({
-          //   title: '失败',
-          // })
-          // setTimeout(function () {
-          //   wx.hideLoading()
-          // }, 1000);
+          wx.showLoading({
+            title: '失败',
+          })
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 1000);
         }
       }),
       wx.request({
@@ -54,12 +54,12 @@ Page({
           this.setData({
             waitItemArr: res.data,
           });
-          // wx.showLoading({
-          //   title: '成功',
-          // });
-          // setTimeout(function () {
-          //   wx.hideLoading()
-          // }, 500);
+          wx.showLoading({
+            title: '成功',
+          });
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 500);
           console.log(res)
         },
         fail: (res) => {
@@ -67,12 +67,12 @@ Page({
           this.setData({
             loadflag: true,
           });
-          // wx.showLoading({
-          //   title: '失败',
-          // })
-          // setTimeout(function () {
-          //   wx.hideLoading()
-          // }, 1000);
+          wx.showLoading({
+            title: '失败',
+          })
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 1000);
         }
       })
   },
