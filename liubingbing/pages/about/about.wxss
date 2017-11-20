@@ -1,1 +1,158 @@
 /* pages/about/about.wxss */
+
+.item-whole {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  height: 220rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  border-bottom: 2rpx solid rgb(219, 219, 219);
+}
+
+.item-left {
+  flex-grow: 1;
+}
+
+.item-middle {
+  flex-grow: 4;
+  margin-left: 20rpx;
+  align-self: flex-start;
+  margin-top: 20rpx;
+  justify-content: center;
+}
+
+.item-right {
+  flex-grow: 1;
+}
+
+.picture {
+  display: block;
+  width: 120rpx;
+  height: 180rpx;
+}
+
+.title {
+  height:20px;
+  width: 220px;
+  font-size: 15px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+
+.description {
+  height:20px;
+  width: 220px;
+  margin-top: 5rpx;
+  color: #666666;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+
+.authors {
+  height:20px;
+  width: 220px;
+  color: #666666;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+
+.score {
+  color: #f21;
+  margin-left: 30rpx;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buy-tickets {
+  height: 70rpx;
+  width: 140rp;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  font-size: 14px;
+}
+
+.shoppingCar {
+  position: fixed;
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  bottom: 0rpx;
+  border-top: 2rpx solid rgb(219, 219, 219);
+}
+
+.shoppingCar-blankBox {
+  display: flex;
+  align-items: center;
+  flex-grow: 3.5;
+  padding-left: 20rpx;
+  color: slategray;
+  background: whitesmoke;
+}
+
+.shoppingCar-buyBox {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  background: orangered;
+  font-size: 40rpx;
+  color: white;
+}
+
+.superScript {
+  position: absolute;
+  text-align: center;
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  right: 14rpx;
+  bottom: 20rpx;
+  right: 590rpx;
+  bottom: 60rpx;
+  background: crimson;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.topText {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100rpx;
+  background: #fff;
+}
+
+.hotText1 {
+  padding-bottom: 30rpx;
+  margin-right: 20rpx;
+  border-bottom: 4rpx solid #fff;
+}
+
+.hotText2 {
+  padding-bottom: 30rpx;
+  margin-right: 20rpx;
+  border-bottom: 4rpx solid #ff0000;
+  color: #ff0000;
+}
+
+.waitText1 {
+  padding-bottom: 30rpx;
+  margin-left: 20rpx;
+  border-bottom: 4rpx solid #fff;
+}
+
+.waitText2 {
+  padding-bottom: 30rpx;
+  margin-left: 20rpx;
+  border-bottom: 4rpx solid #ff0000;
+  color: #ff0000;
+}
+

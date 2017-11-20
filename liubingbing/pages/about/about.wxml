@@ -1,2 +1,75 @@
-<!--pages/about/about.wxml-->
-<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+<!--pages/about/about.wxml -->
+<!-- 单独定义一个模版 -->
+<template name="templateName">
+  <view class="item-whole">
+    <view class="item-left">
+      <image class="picture" src="{{url}}"></image>
+    </view>
+
+    <view class="item-middle">
+      <view class="title">{{title}}</view>
+      <view class="description">{{content}}</view>
+      <view class="authors">{{autor}}</view>
+    </view>
+
+    <view class="item-right">
+      <view class="score">{{score}}</view>
+      <button class="buy-tickets" type="primary" plain="true" bindtap="buyTicket">购票</button>
+    </view>
+  </view>
+</template>
+
+<template name="templateName2">
+  <view class="item-whole">
+    <view class="item-left">
+      <image class="picture" src="{{url}}"></image>
+    </view>
+
+    <view class="item-middle">
+      <view class="title">{{title}}</view>
+      <view class="description">{{content}}</view>
+      <view class="authors">{{autor}}</view>
+    </view>
+
+    <view class="item-right">
+      <button class="buy-tickets" type="primary" plain="true" bindtap="buyTicket">预售</button>
+    </view>
+  </view>
+</template>
+
+<view class="topText">
+  <text class="hotText{{tbflag ? 1 : 2}}" bindtap="hotText">热映</text>
+  <text class="waitText{{tbflag ? 2 : 1}}" bindtap="waitText">待映</text>
+</view>
+
+<block wx:for="{{itemArr}}" wx:key="{{id}}">
+  <view hidden="{{tbflag | loadflag }}">
+    <template is="templateName" data="{{...itemArr[index]}}" />
+  </view>
+</block>
+
+<!-- 隐藏的view，可以看作是隐藏的page -->
+ <block wx:for="{{waitItemArr}}" wx:key="{{id}}">
+  <view hidden="{{!tbflag & !loadflag}}">
+    <template is="templateName2" data="{{...waitItemArr[index]}}" />
+  </view>
+</block>
+
+<view hidden="{{!loadflag}}">
+  <text>网络请求失败</text>
+</view>
+
+<!-- 为了解决footer遮挡住最后一条数据 -->
+<view style="height:100rpx;" />
+
+<view class="shoppingCar">
+  <view class="shoppingCar-blankBox">
+    <text>购物车</text>
+    <view class="superScript">
+      <text>1</text>
+    </view>
+  </view>
+  <view class="shoppingCar-buyBox">
+    <text>结算</text>
+  </view>
+</view>

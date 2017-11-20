@@ -1,0 +1,6 @@
+<!--pages/welToBuy/welToBuy.wxml-->
+<view>
+  <view>
+    <image  class="picture" src="{{src}}"></image>
+  </view>
+</view>

@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-
+    "pages/about/about",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/welToBuy/welToBuy"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,10 +15,14 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/home/home",
-      "text": "首页"
+      "text": "首页",
+      "iconPath":"asserts/images/tabbar/default.jpg",
+      "selectedIconPath":"asserts/images/tabbar/active.jpg"
     }, {
       "pagePath": "pages/about/about",
-      "text": "关于"
+      "text": "关于",
+      "iconPath":"asserts/images/tabbar/aboutDefault.jpg",
+      "selectedIconPath":"asserts/images/tabbar/aboutActive.jpg"
     }],
     "color": "#000",
     "selectedColor": "#f00",

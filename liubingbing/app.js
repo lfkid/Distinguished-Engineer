@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    movieDataUrl: 'http://localhost:3000/movies',
+    waitMovieDataUrl: 'http://localhost:3000/waitItemArr'
   }
 })

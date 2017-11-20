@@ -1,0 +1,7 @@
+/* pages/welToBuy/welToBuy.wxss */
+.picture {
+  display: flex;
+  width: 380px;
+  height: 360px;
+  background-color: #fff;
+}
